@@ -13,7 +13,7 @@ namespace LaserGRBL
 		{
 			InitializeComponent();
 
-			MMn.Renderer = new MMnRenderer();
+			//MMn.Renderer = new MMnRenderer();
 
 			splitContainer1.FixedPanel = FixedPanel.Panel1;
 			splitContainer1.SplitterDistance = (int)Settings.GetObject("MainForm Splitter Position", 260);
