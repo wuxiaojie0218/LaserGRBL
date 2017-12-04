@@ -94,8 +94,8 @@ namespace LaserGRBL
 			// 
 			// CustomButtonArea
 			// 
-			this.CustomButtonArea.ContextMenuStrip = this.MNAddCB;
 			resources.ApplyResources(this.CustomButtonArea, "CustomButtonArea");
+			this.CustomButtonArea.ContextMenuStrip = this.MNAddCB;
 			this.CustomButtonArea.Name = "CustomButtonArea";
 			// 
 			// MNAddCB
