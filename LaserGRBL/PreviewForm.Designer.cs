@@ -53,10 +53,14 @@ namespace LaserGRBL
 			this.MNRemEditCB = new System.Windows.Forms.ContextMenuStrip(this.components);
 			this.RemoveButton = new System.Windows.Forms.ToolStripMenuItem();
 			this.editButtonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.panel1 = new System.Windows.Forms.Panel();
+			this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+			this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
 			this.MNAddCB.SuspendLayout();
 			this.MNRemEditCB.SuspendLayout();
-			this.panel1.SuspendLayout();
+			this.flowLayoutPanel1.SuspendLayout();
+			this.flowLayoutPanel2.SuspendLayout();
+			this.tableLayoutPanel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// Preview
@@ -98,8 +102,8 @@ namespace LaserGRBL
 			this.BtnHoming.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
 			this.BtnHoming.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.BtnHoming.Coloration = System.Drawing.Color.Empty;
-			resources.ApplyResources(this.BtnHoming, "BtnHoming");
 			this.BtnHoming.Image = ((System.Drawing.Image)(resources.GetObject("BtnHoming.Image")));
+			resources.ApplyResources(this.BtnHoming, "BtnHoming");
 			this.BtnHoming.Name = "BtnHoming";
 			this.BtnHoming.SizingMode = LaserGRBL.UserControls.ImageButton.SizingModes.FixedSize;
 			this.TT.SetToolTip(this.BtnHoming, resources.GetString("BtnHoming.ToolTip"));
@@ -126,8 +130,8 @@ namespace LaserGRBL
 			this.BtnZeroing.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
 			this.BtnZeroing.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.BtnZeroing.Coloration = System.Drawing.Color.Empty;
-			resources.ApplyResources(this.BtnZeroing, "BtnZeroing");
 			this.BtnZeroing.Image = ((System.Drawing.Image)(resources.GetObject("BtnZeroing.Image")));
+			resources.ApplyResources(this.BtnZeroing, "BtnZeroing");
 			this.BtnZeroing.Name = "BtnZeroing";
 			this.BtnZeroing.SizingMode = LaserGRBL.UserControls.ImageButton.SizingModes.FixedSize;
 			this.TT.SetToolTip(this.BtnZeroing, resources.GetString("BtnZeroing.ToolTip"));
@@ -136,8 +140,8 @@ namespace LaserGRBL
 			// 
 			// CustomButtonArea
 			// 
-			this.CustomButtonArea.ContextMenuStrip = this.MNAddCB;
 			resources.ApplyResources(this.CustomButtonArea, "CustomButtonArea");
+			this.CustomButtonArea.ContextMenuStrip = this.MNAddCB;
 			this.CustomButtonArea.Name = "CustomButtonArea";
 			// 
 			// MNAddCB
@@ -185,28 +189,44 @@ namespace LaserGRBL
 			this.editButtonToolStripMenuItem.Name = "editButtonToolStripMenuItem";
 			resources.ApplyResources(this.editButtonToolStripMenuItem, "editButtonToolStripMenuItem");
 			// 
-			// panel1
+			// flowLayoutPanel1
 			// 
-			this.panel1.Controls.Add(this.CustomButtonArea);
-			this.panel1.Controls.Add(this.BtnZeroing);
-			this.panel1.Controls.Add(this.BtnResume);
-			this.panel1.Controls.Add(this.BtnUnlock);
-			this.panel1.Controls.Add(this.BtnHoming);
-			this.panel1.Controls.Add(this.BtnStop);
-			this.panel1.Controls.Add(this.BtnReset);
-			resources.ApplyResources(this.panel1, "panel1");
-			this.panel1.Name = "panel1";
+			resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
+			this.flowLayoutPanel1.Controls.Add(this.BtnReset);
+			this.flowLayoutPanel1.Controls.Add(this.BtnHoming);
+			this.flowLayoutPanel1.Controls.Add(this.BtnUnlock);
+			this.flowLayoutPanel1.Controls.Add(this.BtnZeroing);
+			this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+			// 
+			// flowLayoutPanel2
+			// 
+			resources.ApplyResources(this.flowLayoutPanel2, "flowLayoutPanel2");
+			this.flowLayoutPanel2.Controls.Add(this.BtnResume);
+			this.flowLayoutPanel2.Controls.Add(this.BtnStop);
+			this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+			// 
+			// tableLayoutPanel1
+			// 
+			resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+			this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 0, 0);
+			this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel2, 2, 0);
+			this.tableLayoutPanel1.Controls.Add(this.CustomButtonArea, 1, 0);
+			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
 			// 
 			// PreviewForm
 			// 
 			this.Controls.Add(this.Preview);
-			this.Controls.Add(this.panel1);
+			this.Controls.Add(this.tableLayoutPanel1);
 			resources.ApplyResources(this, "$this");
 			this.Name = "PreviewForm";
 			this.MNAddCB.ResumeLayout(false);
 			this.MNRemEditCB.ResumeLayout(false);
-			this.panel1.ResumeLayout(false);
+			this.flowLayoutPanel1.ResumeLayout(false);
+			this.flowLayoutPanel2.ResumeLayout(false);
+			this.tableLayoutPanel1.ResumeLayout(false);
+			this.tableLayoutPanel1.PerformLayout();
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 		private UserControls.ImageButton BtnReset;
@@ -222,6 +242,8 @@ namespace LaserGRBL
 		private System.Windows.Forms.ToolStripMenuItem editButtonToolStripMenuItem;
 		private UserControls.ImageButton BtnZeroing;
 		private PreviewForm.MyFlowPanel CustomButtonArea;
-		private System.Windows.Forms.Panel panel1;
+		private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+		private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
 	}
 }
