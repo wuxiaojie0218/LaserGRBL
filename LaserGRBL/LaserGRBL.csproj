@@ -64,31 +64,23 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>
-    </DocumentationFile>
+    <DocumentationFile></DocumentationFile>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-    <IntermediateOutputPath>
-    </IntermediateOutputPath>
+    <IntermediateOutputPath></IntermediateOutputPath>
     <ConsolePause>true</ConsolePause>
     <ExternalConsole>false</ExternalConsole>
-    <Commandlineparameters>
-    </Commandlineparameters>
+    <Commandlineparameters></Commandlineparameters>
     <RunWithWarnings>true</RunWithWarnings>
-    <AssemblyName>
-    </AssemblyName>
+    <AssemblyName></AssemblyName>
     <SignAssembly>false</SignAssembly>
     <DelaySign>false</DelaySign>
-    <AssemblyOriginatorKeyFile>
-    </AssemblyOriginatorKeyFile>
-    <NoWarn>
-    </NoWarn>
-    <CheckForOverflowUnderflow>
-    </CheckForOverflowUnderflow>
+    <AssemblyOriginatorKeyFile></AssemblyOriginatorKeyFile>
+    <NoWarn></NoWarn>
+    <CheckForOverflowUnderflow></CheckForOverflowUnderflow>
     <LangVersion>Default</LangVersion>
-    <NoStdLib>
-    </NoStdLib>
+    <NoStdLib></NoStdLib>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
@@ -424,7 +416,31 @@
     <EmbeddedResource Include="AutoUpdate\NewVersionForm.zh-CN.resx">
       <DependentUpon>NewVersionForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConnectLogForm.da.resx">
+      <DependentUpon>ConnectLogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectLogForm.de.resx">
+      <DependentUpon>ConnectLogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectLogForm.es.resx">
+      <DependentUpon>ConnectLogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectLogForm.fr.resx">
+      <DependentUpon>ConnectLogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectLogForm.it.resx">
+      <DependentUpon>ConnectLogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectLogForm.pt-BR.resx">
+      <DependentUpon>ConnectLogForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConnectLogForm.resx">
+      <DependentUpon>ConnectLogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectLogForm.ru.resx">
+      <DependentUpon>ConnectLogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectLogForm.zh-CN.resx">
       <DependentUpon>ConnectLogForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GrblConfig.resx">

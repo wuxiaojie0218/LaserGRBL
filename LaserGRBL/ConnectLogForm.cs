@@ -218,9 +218,13 @@ namespace LaserGRBL
 		
 		private void UpdateConf()
 		{
+			tableLayoutPanel4.SuspendLayout();
 			CBPort.Visible = CBSpeed.Visible = LblComPort.Visible = LblBaudRate.Visible = (currentWrapper == ComWrapper.WrapperType.UsbSerial);
 			TxtAddress.Visible = LblAddress.Visible = (currentWrapper == ComWrapper.WrapperType.Telnet || currentWrapper == ComWrapper.WrapperType.LaserWebESP8266);
+
 			LblAddress.Text = (currentWrapper == ComWrapper.WrapperType.Telnet ? "IP:PORT" : "Socket URL");
+
+			tableLayoutPanel4.ResumeLayout();
 
 			if (currentWrapper == ComWrapper.WrapperType.UsbSerial && CBPort.SelectedItem != null && CBSpeed.SelectedItem != null)
 				Core.Configure(currentWrapper, (string)CBPort.SelectedItem, (int)CBSpeed.SelectedItem);
