@@ -192,9 +192,6 @@
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="TbFileName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
   <data name="tableLayoutPanel5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -204,8 +201,8 @@
   <data name="tableLayoutPanel5.ColumnCount" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="PB.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
+  <data name="PB.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="PB.Location" type="System.Drawing.Point, System.Drawing">
     <value>52, 27</value>
@@ -214,7 +211,7 @@
     <value>1, 1, 1, 1</value>
   </data>
   <data name="PB.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 24</value>
+    <value>103, 24</value>
   </data>
   <data name="PB.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -256,7 +253,7 @@
 </value>
   </data>
   <data name="BtnOpen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>225, 4</value>
+    <value>202, 4</value>
   </data>
   <data name="BtnOpen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -308,7 +305,7 @@
 </value>
   </data>
   <data name="BtnRunProgram.Location" type="System.Drawing.Point, System.Drawing">
-    <value>225, 30</value>
+    <value>202, 30</value>
   </data>
   <data name="BtnRunProgram.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -335,7 +332,7 @@
     <value>5</value>
   </data>
   <data name="UDLoopCounter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>182, 29</value>
+    <value>159, 29</value>
   </data>
   <data name="UDLoopCounter.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 20</value>
@@ -368,7 +365,7 @@
     <value>3</value>
   </data>
   <data name="tableLayoutPanel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>243, 52</value>
+    <value>220, 52</value>
   </data>
   <data name="tableLayoutPanel5.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -388,11 +385,14 @@
   <data name="tableLayoutPanel5.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label5" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label3" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="TbFileName" Row="0" RowSpan="1" Column="1" ColumnSpan="2" /&gt;&lt;Control Name="PB" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="BtnOpen" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="BtnRunProgram" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="UDLoopCounter" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,Percent,100,AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
+  <data name="TbFileName.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="TbFileName.Location" type="System.Drawing.Point, System.Drawing">
     <value>54, 3</value>
   </data>
   <data name="TbFileName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 20</value>
+    <value>144, 20</value>
   </data>
   <data name="TbFileName.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -518,7 +518,7 @@
     <value>1, 1, 1, 1</value>
   </data>
   <data name="CBSpeed.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 21</value>
+    <value>51, 21</value>
   </data>
   <data name="CBSpeed.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -612,7 +612,7 @@
 </value>
   </data>
   <data name="BtnConnectDisconnect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>223, 14</value>
+    <value>200, 14</value>
   </data>
   <data name="BtnConnectDisconnect.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>17, 17</value>
@@ -645,10 +645,10 @@
     <value>0, 0</value>
   </data>
   <data name="tableLayoutPanel4.RowCount" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="tableLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>243, 45</value>
+    <value>220, 45</value>
   </data>
   <data name="tableLayoutPanel4.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -666,7 +666,7 @@
     <value>3</value>
   </data>
   <data name="tableLayoutPanel4.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="LblComPort" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="CBPort" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="BtnConnectDisconnect" Row="0" RowSpan="2" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="LblBaudRate" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="CBSpeed" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="LblAddress" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="TxtAddress" Row="1" RowSpan="1" Column="1" ColumnSpan="3" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,AutoSize,0,Percent,100,AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="LblComPort" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="CBPort" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="BtnConnectDisconnect" Row="0" RowSpan="2" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="LblBaudRate" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="CBSpeed" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="LblAddress" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="TxtAddress" Row="1" RowSpan="1" Column="1" ColumnSpan="3" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,AutoSize,0,Percent,100,AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="TxtAddress.Location" type="System.Drawing.Point, System.Drawing">
     <value>34, 24</value>
@@ -675,7 +675,7 @@
     <value>1, 1, 1, 1</value>
   </data>
   <data name="TxtAddress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>185, 20</value>
+    <value>162, 20</value>
   </data>
   <data name="TxtAddress.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -705,7 +705,7 @@
     <value>0, 119</value>
   </data>
   <data name="CmdLog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>243, 415</value>
+    <value>220, 415</value>
   </data>
   <data name="CmdLog.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -735,7 +735,7 @@
     <value>1, 1, 1, 0</value>
   </data>
   <data name="TxtManualCommand.Size" type="System.Drawing.Size, System.Drawing">
-    <value>243, 22</value>
+    <value>220, 22</value>
   </data>
   <data name="TxtManualCommand.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -768,7 +768,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>243, 534</value>
+    <value>220, 534</value>
   </data>
   <data name="&gt;&gt;TT.Name" xml:space="preserve">
     <value>TT</value>
