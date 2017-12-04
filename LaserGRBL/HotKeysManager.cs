@@ -135,7 +135,7 @@ namespace LaserGRBL
 		private bool Match(Keys k1, Keys k2)
 		{
 			bool rv = k1 == k2;
-			System.Diagnostics.Debug.WriteLine(String.Format("{0} vs {1} = {2}", k1, k2, rv));
+			//System.Diagnostics.Debug.WriteLine(String.Format("{0} vs {1} = {2}", k1, k2, rv));
 			return rv;	
 		}
 

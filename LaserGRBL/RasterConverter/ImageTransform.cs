@@ -22,7 +22,7 @@ namespace LaserGRBL.RasterConverter
 			Rectangle destRect = new Rectangle(0, 0, size.Width, size.Height);
 			Bitmap destImage = new Bitmap(size.Width, size.Height);
 
-			destImage.SetResolution(image.HorizontalResolution, image.VerticalResolution);
+			//destImage.SetResolution(image.HorizontalResolution, image.VerticalResolution);
 
 			using (Graphics g = Graphics.FromImage(destImage))
 			{
@@ -63,7 +63,7 @@ namespace LaserGRBL.RasterConverter
 
 				// Create an ImageAttributes object, and set its color threshold.
 				ImageAttributes imageAttr = new ImageAttributes();
-				imageAttr.SetThreshold(threshold);
+				//imageAttr.SetThreshold(threshold);
 
 				if (apply)
 					g.DrawImage(bmp, new Rectangle(0, 0, bmp.Width, bmp.Height), 0, 0, bmp.Width, bmp.Height, GraphicsUnit.Pixel, imageAttr);
