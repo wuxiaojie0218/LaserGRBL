@@ -61,19 +61,17 @@ namespace LaserGRBL
 			this.LblAddress = new System.Windows.Forms.Label();
 			this.TxtAddress = new System.Windows.Forms.TextBox();
 			this.TT = new System.Windows.Forms.ToolTip(this.components);
-			this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-			this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-			this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-			this.panel3 = new System.Windows.Forms.Panel();
-			this.CmdLog = new LaserGRBL.UserControls.CommandLog();
-			this.TxtManualCommand = new LaserGRBL.UserControls.GrblTextBox();
-			this.PB = new LaserGRBL.UserControls.DoubleProgressBar();
 			this.BtnOpen = new LaserGRBL.UserControls.ImageButton();
 			this.BtnRunProgram = new LaserGRBL.UserControls.ImageButton();
+			this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+			this.PB = new LaserGRBL.UserControls.DoubleProgressBar();
+			this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
 			this.BtnConnectDisconnect = new LaserGRBL.UserControls.ImageButton();
+			this.CmdLog = new LaserGRBL.UserControls.CommandLog();
+			this.TxtManualCommand = new LaserGRBL.UserControls.GrblTextBox();
 			((System.ComponentModel.ISupportInitialize)(this.UDLoopCounter)).BeginInit();
 			this.tableLayoutPanel5.SuspendLayout();
-			this.panel3.SuspendLayout();
+			this.tableLayoutPanel4.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// label5
@@ -148,81 +146,9 @@ namespace LaserGRBL
 			// TxtAddress
 			// 
 			resources.ApplyResources(this.TxtAddress, "TxtAddress");
+			this.tableLayoutPanel4.SetColumnSpan(this.TxtAddress, 3);
 			this.TxtAddress.Name = "TxtAddress";
 			this.TxtAddress.TextChanged += new System.EventHandler(this.TxtHostName_TextChanged);
-			// 
-			// tableLayoutPanel5
-			// 
-			resources.ApplyResources(this.tableLayoutPanel5, "tableLayoutPanel5");
-			this.tableLayoutPanel5.Controls.Add(this.label5, 0, 1);
-			this.tableLayoutPanel5.Controls.Add(this.label3, 0, 0);
-			this.tableLayoutPanel5.Controls.Add(this.TbFileName, 1, 0);
-			this.tableLayoutPanel5.Controls.Add(this.PB, 1, 1);
-			this.tableLayoutPanel5.Controls.Add(this.BtnOpen, 3, 0);
-			this.tableLayoutPanel5.Controls.Add(this.BtnRunProgram, 3, 1);
-			this.tableLayoutPanel5.Controls.Add(this.UDLoopCounter, 2, 1);
-			this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-			// 
-			// tableLayoutPanel4
-			// 
-			resources.ApplyResources(this.tableLayoutPanel4, "tableLayoutPanel4");
-			this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-			// 
-			// flowLayoutPanel1
-			// 
-			resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
-			this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-			// 
-			// panel3
-			// 
-			this.panel3.Controls.Add(this.TxtAddress);
-			this.panel3.Controls.Add(this.CBSpeed);
-			this.panel3.Controls.Add(this.LblBaudRate);
-			this.panel3.Controls.Add(this.CBPort);
-			this.panel3.Controls.Add(this.LblComPort);
-			this.panel3.Controls.Add(this.BtnConnectDisconnect);
-			this.panel3.Controls.Add(this.LblAddress);
-			resources.ApplyResources(this.panel3, "panel3");
-			this.panel3.Name = "panel3";
-			// 
-			// CmdLog
-			// 
-			this.CmdLog.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			resources.ApplyResources(this.CmdLog, "CmdLog");
-			this.CmdLog.Name = "CmdLog";
-			this.CmdLog.TabStop = false;
-			// 
-			// TxtManualCommand
-			// 
-			this.TxtManualCommand.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-			resources.ApplyResources(this.TxtManualCommand, "TxtManualCommand");
-			this.TxtManualCommand.Name = "TxtManualCommand";
-			this.TxtManualCommand.WaterMark = "type gcode here";
-			this.TxtManualCommand.WaterMarkActiveForeColor = System.Drawing.Color.Gray;
-			this.TxtManualCommand.WaterMarkFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.TxtManualCommand.WaterMarkForeColor = System.Drawing.Color.LightGray;
-			this.TxtManualCommand.CommandEntered += new LaserGRBL.UserControls.GrblTextBox.CommandEnteredDlg(this.TxtManualCommandCommandEntered);
-			this.TxtManualCommand.Enter += new System.EventHandler(this.TxtManualCommand_Enter);
-			this.TxtManualCommand.Leave += new System.EventHandler(this.TxtManualCommand_Leave);
-			// 
-			// PB
-			// 
-			resources.ApplyResources(this.PB, "PB");
-			this.PB.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-			this.PB.BorderColor = System.Drawing.Color.Black;
-			this.PB.DrawProgressString = true;
-			this.PB.FillColor = System.Drawing.Color.White;
-			this.PB.FillStyle = LaserGRBL.UserControls.FillStyles.Solid;
-			this.PB.ForeColor = System.Drawing.Color.Black;
-			this.PB.Maximum = 100D;
-			this.PB.Minimum = 0D;
-			this.PB.Name = "PB";
-			this.PB.PercString = null;
-			this.PB.ProgressStringDecimals = 0;
-			this.PB.Reverse = false;
-			this.PB.Step = 10D;
-			this.PB.ThrowExceprion = false;
-			this.PB.Value = 0D;
 			// 
 			// BtnOpen
 			// 
@@ -252,16 +178,80 @@ namespace LaserGRBL
 			this.BtnRunProgram.UseAltImage = false;
 			this.BtnRunProgram.Click += new System.EventHandler(this.BtnRunProgramClick);
 			// 
+			// tableLayoutPanel5
+			// 
+			resources.ApplyResources(this.tableLayoutPanel5, "tableLayoutPanel5");
+			this.tableLayoutPanel5.Controls.Add(this.label5, 0, 1);
+			this.tableLayoutPanel5.Controls.Add(this.label3, 0, 0);
+			this.tableLayoutPanel5.Controls.Add(this.TbFileName, 1, 0);
+			this.tableLayoutPanel5.Controls.Add(this.PB, 1, 1);
+			this.tableLayoutPanel5.Controls.Add(this.BtnOpen, 3, 0);
+			this.tableLayoutPanel5.Controls.Add(this.BtnRunProgram, 3, 1);
+			this.tableLayoutPanel5.Controls.Add(this.UDLoopCounter, 2, 1);
+			this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+			// 
+			// PB
+			// 
+			resources.ApplyResources(this.PB, "PB");
+			this.PB.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+			this.PB.BorderColor = System.Drawing.Color.Black;
+			this.PB.DrawProgressString = true;
+			this.PB.FillColor = System.Drawing.Color.White;
+			this.PB.FillStyle = LaserGRBL.UserControls.FillStyles.Solid;
+			this.PB.ForeColor = System.Drawing.Color.Black;
+			this.PB.Maximum = 100D;
+			this.PB.Minimum = 0D;
+			this.PB.Name = "PB";
+			this.PB.PercString = null;
+			this.PB.ProgressStringDecimals = 0;
+			this.PB.Reverse = false;
+			this.PB.Step = 10D;
+			this.PB.ThrowExceprion = false;
+			this.PB.Value = 0D;
+			// 
+			// tableLayoutPanel4
+			// 
+			resources.ApplyResources(this.tableLayoutPanel4, "tableLayoutPanel4");
+			this.tableLayoutPanel4.Controls.Add(this.LblComPort, 0, 0);
+			this.tableLayoutPanel4.Controls.Add(this.CBPort, 1, 0);
+			this.tableLayoutPanel4.Controls.Add(this.BtnConnectDisconnect, 4, 0);
+			this.tableLayoutPanel4.Controls.Add(this.LblBaudRate, 2, 0);
+			this.tableLayoutPanel4.Controls.Add(this.CBSpeed, 3, 0);
+			this.tableLayoutPanel4.Controls.Add(this.LblAddress, 0, 1);
+			this.tableLayoutPanel4.Controls.Add(this.TxtAddress, 1, 1);
+			this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+			// 
 			// BtnConnectDisconnect
 			// 
 			this.BtnConnectDisconnect.AltImage = null;
+			resources.ApplyResources(this.BtnConnectDisconnect, "BtnConnectDisconnect");
 			this.BtnConnectDisconnect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
 			this.BtnConnectDisconnect.Coloration = System.Drawing.Color.Empty;
-			resources.ApplyResources(this.BtnConnectDisconnect, "BtnConnectDisconnect");
 			this.BtnConnectDisconnect.Image = ((System.Drawing.Image)(resources.GetObject("BtnConnectDisconnect.Image")));
 			this.BtnConnectDisconnect.Name = "BtnConnectDisconnect";
+			this.tableLayoutPanel4.SetRowSpan(this.BtnConnectDisconnect, 2);
 			this.BtnConnectDisconnect.SizingMode = LaserGRBL.UserControls.ImageButton.SizingModes.StretchImage;
 			this.BtnConnectDisconnect.UseAltImage = false;
+			// 
+			// CmdLog
+			// 
+			this.CmdLog.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			resources.ApplyResources(this.CmdLog, "CmdLog");
+			this.CmdLog.Name = "CmdLog";
+			this.CmdLog.TabStop = false;
+			// 
+			// TxtManualCommand
+			// 
+			this.TxtManualCommand.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+			resources.ApplyResources(this.TxtManualCommand, "TxtManualCommand");
+			this.TxtManualCommand.Name = "TxtManualCommand";
+			this.TxtManualCommand.WaterMark = "type gcode here";
+			this.TxtManualCommand.WaterMarkActiveForeColor = System.Drawing.Color.Gray;
+			this.TxtManualCommand.WaterMarkFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.TxtManualCommand.WaterMarkForeColor = System.Drawing.Color.LightGray;
+			this.TxtManualCommand.CommandEntered += new LaserGRBL.UserControls.GrblTextBox.CommandEnteredDlg(this.TxtManualCommandCommandEntered);
+			this.TxtManualCommand.Enter += new System.EventHandler(this.TxtManualCommand_Enter);
+			this.TxtManualCommand.Leave += new System.EventHandler(this.TxtManualCommand_Leave);
 			// 
 			// ConnectLogForm
 			// 
@@ -270,15 +260,13 @@ namespace LaserGRBL
 			this.Controls.Add(this.CmdLog);
 			this.Controls.Add(this.TxtManualCommand);
 			this.Controls.Add(this.tableLayoutPanel5);
-			this.Controls.Add(this.panel3);
-			this.Controls.Add(this.flowLayoutPanel1);
 			this.Controls.Add(this.tableLayoutPanel4);
 			this.Name = "ConnectLogForm";
 			((System.ComponentModel.ISupportInitialize)(this.UDLoopCounter)).EndInit();
 			this.tableLayoutPanel5.ResumeLayout(false);
 			this.tableLayoutPanel5.PerformLayout();
-			this.panel3.ResumeLayout(false);
-			this.panel3.PerformLayout();
+			this.tableLayoutPanel4.ResumeLayout(false);
+			this.tableLayoutPanel4.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -291,7 +279,5 @@ namespace LaserGRBL
 		private System.Windows.Forms.NumericUpDown UDLoopCounter;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-		private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-		private System.Windows.Forms.Panel panel3;
 	}
 }
