@@ -70,12 +70,12 @@ namespace LaserGRBL
 			// 
 			resources.ApplyResources(this.tableLayoutPanel8, "tableLayoutPanel8");
 			this.tableLayoutPanel8.Controls.Add(this.BtnReset, 0, 0);
-			this.tableLayoutPanel8.Controls.Add(this.CustomButtonArea, 5, 0);
+			this.tableLayoutPanel8.Controls.Add(this.CustomButtonArea, 4, 0);
 			this.tableLayoutPanel8.Controls.Add(this.BtnUnlock, 2, 0);
 			this.tableLayoutPanel8.Controls.Add(this.BtnHoming, 1, 0);
-			this.tableLayoutPanel8.Controls.Add(this.BtnZeroing, 4, 0);
-			this.tableLayoutPanel8.Controls.Add(this.BtnResume, 7, 0);
-			this.tableLayoutPanel8.Controls.Add(this.BtnStop, 8, 0);
+			this.tableLayoutPanel8.Controls.Add(this.BtnResume, 5, 0);
+			this.tableLayoutPanel8.Controls.Add(this.BtnStop, 6, 0);
+			this.tableLayoutPanel8.Controls.Add(this.BtnZeroing, 3, 0);
 			this.tableLayoutPanel8.Name = "tableLayoutPanel8";
 			// 
 			// BtnReset
@@ -211,7 +211,6 @@ namespace LaserGRBL
 			this.Controls.Add(this.tableLayoutPanel1);
 			resources.ApplyResources(this, "$this");
 			this.Name = "PreviewForm";
-			this.Resize += new System.EventHandler(this.PreviewForm_Resize);
 			this.tableLayoutPanel8.ResumeLayout(false);
 			this.MNAddCB.ResumeLayout(false);
 			this.MNRemEditCB.ResumeLayout(false);
