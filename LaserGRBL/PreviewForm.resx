@@ -142,8 +142,11 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Preview.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
+  <metadata name="TT.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="BtnReset.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -246,7 +249,10 @@
 </value>
   </data>
   <data name="BtnReset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>2, 2</value>
+  </data>
+  <data name="BtnReset.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="BtnReset.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>49, 49</value>
@@ -260,9 +266,6 @@
   <data name="BtnReset.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <metadata name="TT.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="BtnReset.ToolTip" xml:space="preserve">
     <value>Grbl Reset (ctrl-x)</value>
   </data>
@@ -335,7 +338,10 @@
 </value>
   </data>
   <data name="BtnUnlock.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 3</value>
+    <value>108, 2</value>
+  </data>
+  <data name="BtnUnlock.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="BtnUnlock.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>49, 49</value>
@@ -447,7 +453,10 @@
 </value>
   </data>
   <data name="BtnHoming.Location" type="System.Drawing.Point, System.Drawing">
-    <value>58, 3</value>
+    <value>55, 2</value>
+  </data>
+  <data name="BtnHoming.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="BtnHoming.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>49, 49</value>
@@ -555,7 +564,10 @@
 </value>
   </data>
   <data name="BtnResume.Location" type="System.Drawing.Point, System.Drawing">
-    <value>58, 3</value>
+    <value>58, 2</value>
+  </data>
+  <data name="BtnResume.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="BtnResume.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>49, 49</value>
@@ -569,6 +581,9 @@
   <data name="BtnResume.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
+  <metadata name="TT.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="BtnResume.ToolTip" xml:space="preserve">
     <value>Resume</value>
   </data>
@@ -644,7 +659,10 @@
 </value>
   </data>
   <data name="BtnZeroing.Location" type="System.Drawing.Point, System.Drawing">
-    <value>168, 3</value>
+    <value>164, 2</value>
+  </data>
+  <data name="BtnZeroing.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 2, 5, 2</value>
   </data>
   <data name="BtnZeroing.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>49, 49</value>
@@ -682,12 +700,6 @@
   <metadata name="MNAddCB.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>81, 17</value>
   </metadata>
-  <data name="addCustomButtonToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="addCustomButtonToolStripMenuItem.Text" xml:space="preserve">
-    <value>Add Custom Button</value>
-  </data>
   <data name="MNAddCB.Size" type="System.Drawing.Size, System.Drawing">
     <value>181, 26</value>
   </data>
@@ -701,13 +713,13 @@
     <value>Fill</value>
   </data>
   <data name="CustomButtonArea.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 0</value>
+    <value>218, 0</value>
   </data>
   <data name="CustomButtonArea.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="CustomButtonArea.Size" type="System.Drawing.Size, System.Drawing">
-    <value>352, 54</value>
+    <value>355, 54</value>
   </data>
   <data name="CustomButtonArea.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -723,6 +735,12 @@
   </data>
   <data name="&gt;&gt;CustomButtonArea.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="addCustomButtonToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="addCustomButtonToolStripMenuItem.Text" xml:space="preserve">
+    <value>Add Custom Button</value>
   </data>
   <data name="BtnStop.AltImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -897,7 +915,10 @@
 </value>
   </data>
   <data name="BtnStop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>5, 2</value>
+  </data>
+  <data name="BtnStop.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 2, 2, 2</value>
   </data>
   <data name="BtnStop.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>49, 49</value>
@@ -929,6 +950,15 @@
   <metadata name="MNRemEditCB.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>236, 17</value>
   </metadata>
+  <data name="MNRemEditCB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 48</value>
+  </data>
+  <data name="&gt;&gt;MNRemEditCB.Name" xml:space="preserve">
+    <value>MNRemEditCB</value>
+  </data>
+  <data name="&gt;&gt;MNRemEditCB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="RemoveButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>156, 22</value>
   </data>
@@ -940,15 +970,6 @@
   </data>
   <data name="editButtonToolStripMenuItem.Text" xml:space="preserve">
     <value>Edit Button</value>
-  </data>
-  <data name="MNRemEditCB.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 48</value>
-  </data>
-  <data name="&gt;&gt;MNRemEditCB.Name" xml:space="preserve">
-    <value>MNRemEditCB</value>
-  </data>
-  <data name="&gt;&gt;MNRemEditCB.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="flowLayoutPanel1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -966,7 +987,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 54</value>
+    <value>218, 54</value>
   </data>
   <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -999,13 +1020,13 @@
     <value>RightToLeft</value>
   </data>
   <data name="flowLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>572, 0</value>
+    <value>573, 0</value>
   </data>
   <data name="flowLayoutPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="flowLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 54</value>
+    <value>109, 54</value>
   </data>
   <data name="flowLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -1047,7 +1068,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
