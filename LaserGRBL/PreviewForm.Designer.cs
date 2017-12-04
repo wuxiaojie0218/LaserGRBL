@@ -47,9 +47,9 @@ namespace LaserGRBL
 			this.addCustomButtonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.BtnUnlock = new LaserGRBL.UserControls.ImageButton();
 			this.BtnHoming = new LaserGRBL.UserControls.ImageButton();
-			this.BtnZeroing = new LaserGRBL.UserControls.ImageButton();
 			this.BtnResume = new LaserGRBL.UserControls.ImageButton();
 			this.BtnStop = new LaserGRBL.UserControls.ImageButton();
+			this.BtnZeroing = new LaserGRBL.UserControls.ImageButton();
 			this.TT = new System.Windows.Forms.ToolTip(this.components);
 			this.MNRemEditCB = new System.Windows.Forms.ContextMenuStrip(this.components);
 			this.RemoveButton = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,12 +70,12 @@ namespace LaserGRBL
 			// 
 			resources.ApplyResources(this.tableLayoutPanel8, "tableLayoutPanel8");
 			this.tableLayoutPanel8.Controls.Add(this.BtnReset, 0, 0);
-			this.tableLayoutPanel8.Controls.Add(this.CustomButtonArea, 4, 0);
 			this.tableLayoutPanel8.Controls.Add(this.BtnUnlock, 2, 0);
 			this.tableLayoutPanel8.Controls.Add(this.BtnHoming, 1, 0);
-			this.tableLayoutPanel8.Controls.Add(this.BtnResume, 5, 0);
+			this.tableLayoutPanel8.Controls.Add(this.BtnResume, 7, 0);
+			this.tableLayoutPanel8.Controls.Add(this.BtnZeroing, 4, 0);
 			this.tableLayoutPanel8.Controls.Add(this.BtnStop, 6, 0);
-			this.tableLayoutPanel8.Controls.Add(this.BtnZeroing, 3, 0);
+			this.tableLayoutPanel8.Controls.Add(this.CustomButtonArea, 8, 0);
 			this.tableLayoutPanel8.Name = "tableLayoutPanel8";
 			// 
 			// BtnReset
@@ -94,8 +94,8 @@ namespace LaserGRBL
 			// 
 			// CustomButtonArea
 			// 
-			resources.ApplyResources(this.CustomButtonArea, "CustomButtonArea");
 			this.CustomButtonArea.ContextMenuStrip = this.MNAddCB;
+			resources.ApplyResources(this.CustomButtonArea, "CustomButtonArea");
 			this.CustomButtonArea.Name = "CustomButtonArea";
 			// 
 			// MNAddCB
@@ -139,20 +139,6 @@ namespace LaserGRBL
 			this.BtnHoming.UseAltImage = false;
 			this.BtnHoming.Click += new System.EventHandler(this.BtnGoHomeClick);
 			// 
-			// BtnZeroing
-			// 
-			this.BtnZeroing.AltImage = null;
-			resources.ApplyResources(this.BtnZeroing, "BtnZeroing");
-			this.BtnZeroing.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.BtnZeroing.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.BtnZeroing.Coloration = System.Drawing.Color.Empty;
-			this.BtnZeroing.Image = ((System.Drawing.Image)(resources.GetObject("BtnZeroing.Image")));
-			this.BtnZeroing.Name = "BtnZeroing";
-			this.BtnZeroing.SizingMode = LaserGRBL.UserControls.ImageButton.SizingModes.FixedSize;
-			this.TT.SetToolTip(this.BtnZeroing, resources.GetString("BtnZeroing.ToolTip"));
-			this.BtnZeroing.UseAltImage = false;
-			this.BtnZeroing.Click += new System.EventHandler(this.BtnZeroing_Click);
-			// 
 			// BtnResume
 			// 
 			this.BtnResume.AltImage = null;
@@ -180,6 +166,20 @@ namespace LaserGRBL
 			this.TT.SetToolTip(this.BtnStop, resources.GetString("BtnStop.ToolTip"));
 			this.BtnStop.UseAltImage = false;
 			this.BtnStop.Click += new System.EventHandler(this.BtnStopClick);
+			// 
+			// BtnZeroing
+			// 
+			this.BtnZeroing.AltImage = null;
+			resources.ApplyResources(this.BtnZeroing, "BtnZeroing");
+			this.BtnZeroing.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.BtnZeroing.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.BtnZeroing.Coloration = System.Drawing.Color.Empty;
+			this.BtnZeroing.Image = ((System.Drawing.Image)(resources.GetObject("BtnZeroing.Image")));
+			this.BtnZeroing.Name = "BtnZeroing";
+			this.BtnZeroing.SizingMode = LaserGRBL.UserControls.ImageButton.SizingModes.FixedSize;
+			this.TT.SetToolTip(this.BtnZeroing, resources.GetString("BtnZeroing.ToolTip"));
+			this.BtnZeroing.UseAltImage = false;
+			this.BtnZeroing.Click += new System.EventHandler(this.BtnZeroing_Click);
 			// 
 			// MNRemEditCB
 			// 
