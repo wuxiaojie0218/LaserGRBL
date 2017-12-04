@@ -15,7 +15,7 @@ namespace LaserGRBL
 		{
 			if (srv == null)
 			{
-				ConsoleAPI.HaveConsole = true;
+				//ConsoleAPI.HaveConsole = true;
 				Console.WriteLine("ESP266 Grbl emulator (listening as ws://127.0.0.1:81/)");
 
 				srv = new WebSocketServer("ws://127.0.0.1:81");
