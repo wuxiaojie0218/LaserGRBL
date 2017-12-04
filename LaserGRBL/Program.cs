@@ -11,6 +11,8 @@ namespace LaserGRBL
 		[STAThread]
 		static void Main(string[] args)
 		{
+			//THIS IS THE LINUX VERSION 
+
 			Tools.TimingBase.TimeFromApplicationStartup();
 
 			Logger.Start();
