@@ -215,6 +215,12 @@ namespace LaserGRBL
 		{
 			Core.SetNewZero();
 		}
+
+		private void PreviewForm_Resize(object sender, EventArgs e)
+		{
+			tableLayoutPanel1.ResumeLayout(true);
+			tableLayoutPanel8.ResumeLayout(true);
+		}
 	}
 
 }

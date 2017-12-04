@@ -211,6 +211,7 @@ namespace LaserGRBL
 			this.Controls.Add(this.tableLayoutPanel1);
 			resources.ApplyResources(this, "$this");
 			this.Name = "PreviewForm";
+			this.Resize += new System.EventHandler(this.PreviewForm_Resize);
 			this.tableLayoutPanel8.ResumeLayout(false);
 			this.MNAddCB.ResumeLayout(false);
 			this.MNRemEditCB.ResumeLayout(false);
