@@ -261,7 +261,7 @@
 </value>
   </data>
   <data name="BtnReset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>4, 3</value>
   </data>
   <data name="BtnReset.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -318,13 +318,13 @@
     <value>Fill</value>
   </data>
   <data name="CustomButtonArea.Location" type="System.Drawing.Point, System.Drawing">
-    <value>217, 1</value>
+    <value>226, 1</value>
   </data>
   <data name="CustomButtonArea.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="CustomButtonArea.Size" type="System.Drawing.Size, System.Drawing">
-    <value>448, 53</value>
+    <value>433, 53</value>
   </data>
   <data name="CustomButtonArea.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -401,7 +401,7 @@
 </value>
   </data>
   <data name="BtnUnlock.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 3</value>
+    <value>115, 3</value>
   </data>
   <data name="BtnUnlock.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -519,7 +519,7 @@
 </value>
   </data>
   <data name="BtnHoming.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 3</value>
+    <value>60, 3</value>
   </data>
   <data name="BtnHoming.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -633,7 +633,7 @@
 </value>
   </data>
   <data name="BtnResume.Location" type="System.Drawing.Point, System.Drawing">
-    <value>668, 3</value>
+    <value>663, 3</value>
   </data>
   <data name="BtnResume.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -841,7 +841,7 @@
 </value>
   </data>
   <data name="BtnStop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>722, 3</value>
+    <value>720, 3</value>
   </data>
   <data name="BtnStop.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -936,7 +936,7 @@
 </value>
   </data>
   <data name="BtnZeroing.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 3</value>
+    <value>172, 3</value>
   </data>
   <data name="BtnZeroing.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -999,7 +999,7 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanel8.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="BtnReset" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="CustomButtonArea" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="BtnUnlock" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="BtnHoming" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="BtnResume" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="BtnStop" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="BtnZeroing" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,70,AutoSize,70,AutoSize,70,AutoSize,70,Percent,100,AutoSize,70,AutoSize,70" /&gt;&lt;Rows Styles="AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="BtnReset" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="CustomButtonArea" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="BtnUnlock" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="BtnHoming" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="BtnResume" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="BtnStop" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="BtnZeroing" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,56,AutoSize,0,Absolute,56,Absolute,56,Percent,100,Absolute,56,Absolute,56" /&gt;&lt;Rows Styles="AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <metadata name="MNRemEditCB.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>236, 17</value>
