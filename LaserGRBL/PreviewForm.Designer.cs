@@ -55,12 +55,12 @@ namespace LaserGRBL
 			this.editButtonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
 			this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+			this.panel1 = new System.Windows.Forms.Panel();
 			this.MNAddCB.SuspendLayout();
 			this.MNRemEditCB.SuspendLayout();
 			this.flowLayoutPanel1.SuspendLayout();
 			this.flowLayoutPanel2.SuspendLayout();
-			this.tableLayoutPanel1.SuspendLayout();
+			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// Preview
@@ -205,28 +205,27 @@ namespace LaserGRBL
 			this.flowLayoutPanel2.Controls.Add(this.BtnStop);
 			this.flowLayoutPanel2.Name = "flowLayoutPanel2";
 			// 
-			// tableLayoutPanel1
+			// panel1
 			// 
-			resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-			this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 0, 0);
-			this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel2, 2, 0);
-			this.tableLayoutPanel1.Controls.Add(this.CustomButtonArea, 1, 0);
-			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+			this.panel1.Controls.Add(this.CustomButtonArea);
+			this.panel1.Controls.Add(this.flowLayoutPanel1);
+			this.panel1.Controls.Add(this.flowLayoutPanel2);
+			resources.ApplyResources(this.panel1, "panel1");
+			this.panel1.Name = "panel1";
 			// 
 			// PreviewForm
 			// 
 			this.Controls.Add(this.Preview);
-			this.Controls.Add(this.tableLayoutPanel1);
+			this.Controls.Add(this.panel1);
 			resources.ApplyResources(this, "$this");
 			this.Name = "PreviewForm";
 			this.MNAddCB.ResumeLayout(false);
 			this.MNRemEditCB.ResumeLayout(false);
 			this.flowLayoutPanel1.ResumeLayout(false);
 			this.flowLayoutPanel2.ResumeLayout(false);
-			this.tableLayoutPanel1.ResumeLayout(false);
-			this.tableLayoutPanel1.PerformLayout();
+			this.panel1.ResumeLayout(false);
+			this.panel1.PerformLayout();
 			this.ResumeLayout(false);
-			this.PerformLayout();
 
 		}
 		private UserControls.ImageButton BtnReset;
@@ -244,6 +243,6 @@ namespace LaserGRBL
 		private PreviewForm.MyFlowPanel CustomButtonArea;
 		private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
 		private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+		private System.Windows.Forms.Panel panel1;
 	}
 }
