@@ -29,7 +29,6 @@ namespace LaserGRBL
 		private System.Windows.Forms.Label LblBaudRate;
 		private System.Windows.Forms.ComboBox CBPort;
 		private System.Windows.Forms.ComboBox CBSpeed;
-		private LaserGRBL.UserControls.ImageButton BtnConnectDisconnect;
 		private System.Windows.Forms.ToolTip TT;
 		
 		/// <summary>
@@ -73,12 +72,12 @@ namespace LaserGRBL
 			this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
 			this.LblComPort = new System.Windows.Forms.Label();
 			this.CBPort = new System.Windows.Forms.ComboBox();
-			this.BtnConnectDisconnect = new LaserGRBL.UserControls.ImageButton();
 			this.LblBaudRate = new System.Windows.Forms.Label();
 			this.CBSpeed = new System.Windows.Forms.ComboBox();
 			this.LblAddress = new System.Windows.Forms.Label();
 			this.TxtAddress = new System.Windows.Forms.TextBox();
 			this.TT = new System.Windows.Forms.ToolTip(this.components);
+			this.BtnCD = new LaserGRBL.UserControls.ImageButton();
 			this.tableLayoutPanel1.SuspendLayout();
 			this.GBCommands.SuspendLayout();
 			this.tableLayoutPanel6.SuspendLayout();
@@ -248,11 +247,11 @@ namespace LaserGRBL
 			resources.ApplyResources(this.tableLayoutPanel4, "tableLayoutPanel4");
 			this.tableLayoutPanel4.Controls.Add(this.LblComPort, 0, 0);
 			this.tableLayoutPanel4.Controls.Add(this.CBPort, 1, 0);
-			this.tableLayoutPanel4.Controls.Add(this.BtnConnectDisconnect, 2, 0);
 			this.tableLayoutPanel4.Controls.Add(this.LblAddress, 0, 2);
 			this.tableLayoutPanel4.Controls.Add(this.TxtAddress, 1, 2);
 			this.tableLayoutPanel4.Controls.Add(this.LblBaudRate, 0, 1);
 			this.tableLayoutPanel4.Controls.Add(this.CBSpeed, 1, 1);
+			this.tableLayoutPanel4.Controls.Add(this.BtnCD, 2, 1);
 			this.tableLayoutPanel4.Name = "tableLayoutPanel4";
 			// 
 			// LblComPort
@@ -267,21 +266,6 @@ namespace LaserGRBL
 			this.CBPort.FormattingEnabled = true;
 			this.CBPort.Name = "CBPort";
 			this.CBPort.SelectedIndexChanged += new System.EventHandler(this.CBPort_SelectedIndexChanged);
-			// 
-			// BtnConnectDisconnect
-			// 
-			this.BtnConnectDisconnect.AltImage = ((System.Drawing.Image)(resources.GetObject("BtnConnectDisconnect.AltImage")));
-			resources.ApplyResources(this.BtnConnectDisconnect, "BtnConnectDisconnect");
-			this.BtnConnectDisconnect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-			this.BtnConnectDisconnect.Coloration = System.Drawing.Color.Empty;
-			this.BtnConnectDisconnect.Image = ((System.Drawing.Image)(resources.GetObject("BtnConnectDisconnect.Image")));
-			this.BtnConnectDisconnect.Name = "BtnConnectDisconnect";
-			this.tableLayoutPanel4.SetRowSpan(this.BtnConnectDisconnect, 3);
-			this.BtnConnectDisconnect.SizingMode = LaserGRBL.UserControls.ImageButton.SizingModes.FixedSize;
-			this.BtnConnectDisconnect.TabStop = false;
-			this.TT.SetToolTip(this.BtnConnectDisconnect, resources.GetString("BtnConnectDisconnect.ToolTip"));
-			this.BtnConnectDisconnect.UseAltImage = false;
-			this.BtnConnectDisconnect.Click += new System.EventHandler(this.BtnConnectDisconnectClick);
 			// 
 			// LblBaudRate
 			// 
@@ -306,6 +290,20 @@ namespace LaserGRBL
 			resources.ApplyResources(this.TxtAddress, "TxtAddress");
 			this.TxtAddress.Name = "TxtAddress";
 			this.TxtAddress.TextChanged += new System.EventHandler(this.TxtHostName_TextChanged);
+			// 
+			// BtnCD
+			// 
+			this.BtnCD.AltImage = ((System.Drawing.Image)(resources.GetObject("BtnCD.AltImage")));
+			resources.ApplyResources(this.BtnCD, "BtnCD");
+			this.BtnCD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.BtnCD.Coloration = System.Drawing.Color.Empty;
+			this.BtnCD.Image = ((System.Drawing.Image)(resources.GetObject("BtnCD.Image")));
+			this.BtnCD.Name = "BtnCD";
+			this.BtnCD.SizingMode = LaserGRBL.UserControls.ImageButton.SizingModes.FixedSize;
+			this.BtnCD.TabStop = false;
+			this.TT.SetToolTip(this.BtnCD, resources.GetString("BtnCD.ToolTip"));
+			this.BtnCD.UseAltImage = false;
+			this.BtnCD.Click += new System.EventHandler(this.BtnConnectDisconnectClick);
 			// 
 			// ConnectLogForm
 			// 
@@ -338,5 +336,6 @@ namespace LaserGRBL
 		private System.Windows.Forms.Panel GBFile;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
 		private System.Windows.Forms.NumericUpDown UDLoopCounter;
+		private UserControls.ImageButton BtnCD;
 	}
 }

@@ -640,77 +640,6 @@
   <data name="&gt;&gt;CBPort.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="BtnConnectDisconnect.AltImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAMgSURBVDhPhZFrLNVxGMefLZNe1Fl6Y/XGauu6SbWS
-        g446SbPcCbnEJJEuS6VSyzoumVtRopkdXQ4n1pmaVqPTlpgi1zjmllscO5jjJArP03MyjVXrxXe/34v/
-        83k+398fzsa2rIi4XlsWHFkaEXDiGQSGlECgdzEEeBcbHnF7utnXs2i5h4sMDjnkgp04E0SiW4sC0bf7
-        HS6nqPqCwl6ZHnYpgADPYvB1V2wN9i95fC26cviIZ9ETN6dHxv8ExNwb8pJkdY6FHi+N8nKVn/bzUFy9
-        EVOlVZaPUn3rLOVIO4gNyg7a3Tex2/8XwMmoGsHJyHKlJLGezke+IXlBJ/WqkboGkFq6kJo7kaSyHnJ1
-        zvuwV5Sx4Q+AvTgLHB2lkjPnlFT+bojGviH1DiJ19DKAhxvakOo5hc805OOTX20lTFm9CODuJANPl4KM
-        ly+6aHoWSTOK1M8GnX1IKjZoaEeqaUGqVSE9f60jX395tY1NqulvgIdzvjg7s+YHIpKOt2vGkAY0SD39
-        SG3dXKEDqY6HK5v4ZKNH8naysEiKst6TDvrAsaOKl2q1juYBY+NIQyMLarBFLVdorKikibLzJM8rxV0W
-        aeEHxfFgvy8BIChQ8VGtRZqZQZqcQtLq5mr0zdfo4bN9mKakGwnlq+j9RdNxWYj5AeTZCckSAB8feUVV
-        49zA1Pc5i2EGDnKNbrZQM2x2ZprqMv1IK1tH+MaMMBmqMQ7W6iGwX5xpe+7C6y/VTdM0xB9P6GuwhZpr
-        jAyoafL7LGVLW8nMSvFQFSmIwMI1X/GtkDDV4DPGwhYQ77sLu3cnmYefKumoa56iUX6D8Uk2qbxJWGRG
-        FRlh5G1/9s4Ft8NGg9eWAUrAFR+aaDDXmPi+V28Ae0RpYGmZvCkk9GldU+skTfOD4pOdhGWbSFuwnrov
-        GV3FFAC9MsZzJGDB2x35bvgLMP9PGbI64Gi+Uvl2gOKu5Oq6YwSfsNaWQVuIOydwDH4BFmQRQB+hMHWl
-        tVVqzjbLB0FtFwUCTAI5VokIC031ysH/BcxnhzAH2q8IgLcuxUSDPEw3UvHA9sUAgJ8PxVeAopDCdAAA
-        AABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="BtnConnectDisconnect.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="BtnConnectDisconnect.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAANiSURBVDhPdZFtTFN3FMYPziV+UBdnsmT7sC8mxi/L
-        RuLYbq0tpCovOkSBUE0ZS9REmAEEwxZMU0iQzJVpkQDLzAIbjjkxQnEt+DIgtLBudLhqKqRQQgXbEqWj
-        NGBJ7f/ZuZAlarIPv9zk5j6/55xzqfKi7+Pyc66/TpT2J+Zru6hAa15Fl9Op5mfTkcPXsg5ntlNaWhs1
-        HHiPXIeI/siiJMdBOs1spupmf7GhweMpyLds02XfWK/L7Xpbl9tZX1szErvR5cfZSvs/B/e35aem/rAm
-        yKJ3hjPJY/+EfmISyNAUSNPXucOlZQNTurzO8ZKiO4/M3TNifCoOr19g5H4MeoNjSbO37VNT+vsbWdDr
-        yCPYDtAJFhAdP2Vb99kxS4u+dhRGoxPusQiCIQHvjIB7kvEKOB4KVFcNBi+nvnvv0QWCs4hm+1JpZ38G
-        CzTqS5SR3nK+2mDHtG8ZoYjATHBNMDYl4GLJ6LjA0LmTGKsmhJ2EwUN097d9RH3pLMjM+HFr4fHuvomJ
-        BcSEwBNun50TmJ4V8PgEHjDDJj3uFxOeewne7wg9moRvrBqiLjULtNm/VNy9NQXB4cUlgacLAv4nAj7e
-        f4InuXf1Mv4ueg3LNoIIEjxGwnXV+ttmNb3VqWJBWUmvfWVFQMQFlp8JhBYF5uZ5ChZ57DbYct/EwzJC
-        qJ0QuUmIDrKkhtCtIed1JSVSYaH19xlujLJEJsw3kNfwM5OjbjgvFWO8QQeXQYmbGRsQbOZJXLzKeULH
-        bgqQTtfxa58jiumAQGRZYImZDwsEWCq/W2DpM17P3GqFNW8TojxJ3MJ/4hThqoJaSZPS+MHJzy0PBhwR
-        zHGrfAd5jeDTNZl8G1PjSPxLKXHFd4bbWTBcQLiSRI3tEm2gvZomUkh1O44cvfLnnYE5LHJIlqw85+Zo
-        DMaLwzHtR3nm3v30OFxLGDpKaPuQvuLw6z9LfMR9e5opObmeJMm4PTundajfFlhtDc1HUF7RE5eUjfpv
-        lW8Y3Nxq13I4iWo4THL4JYFKZWJJ3Zac3JbvrT2TKCk1Q0qqrahS7thqSSZv9x4eW6JKDif8F35JoFab
-        Vtm168LGlJT6r3fubi0/psyhXiVVXVMQOHj6xeb/FcgoVE3r0lV6alZu3tKhIAt/+MWrwTWI/gU0hkhp
-        GUW6qQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="BtnConnectDisconnect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>193, 25</value>
-  </data>
-  <data name="BtnConnectDisconnect.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="BtnConnectDisconnect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 17</value>
-  </data>
-  <data name="BtnConnectDisconnect.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="BtnConnectDisconnect.ToolTip" xml:space="preserve">
-    <value>Connect</value>
-  </data>
-  <data name="&gt;&gt;BtnConnectDisconnect.Name" xml:space="preserve">
-    <value>BtnConnectDisconnect</value>
-  </data>
-  <data name="&gt;&gt;BtnConnectDisconnect.Type" xml:space="preserve">
-    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=2.8.27.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;BtnConnectDisconnect.Parent" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
-  </data>
-  <data name="&gt;&gt;BtnConnectDisconnect.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="LblAddress.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
   </data>
@@ -748,7 +677,7 @@
     <value>tableLayoutPanel4</value>
   </data>
   <data name="&gt;&gt;LblAddress.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="TxtAddress.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -778,7 +707,7 @@
     <value>tableLayoutPanel4</value>
   </data>
   <data name="&gt;&gt;TxtAddress.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="LblBaudRate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -814,7 +743,7 @@
     <value>tableLayoutPanel4</value>
   </data>
   <data name="&gt;&gt;LblBaudRate.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="CBSpeed.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -844,6 +773,77 @@
     <value>tableLayoutPanel4</value>
   </data>
   <data name="&gt;&gt;CBSpeed.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="BtnCD.AltImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAMgSURBVDhPhZFrLNVxGMefLZNe1Fl6Y/XGauu6SbWS
+        g446SbPcCbnEJJEuS6VSyzoumVtRopkdXQ4n1pmaVqPTlpgi1zjmllscO5jjJArP03MyjVXrxXe/34v/
+        83k+398fzsa2rIi4XlsWHFkaEXDiGQSGlECgdzEEeBcbHnF7utnXs2i5h4sMDjnkgp04E0SiW4sC0bf7
+        HS6nqPqCwl6ZHnYpgADPYvB1V2wN9i95fC26cviIZ9ETN6dHxv8ExNwb8pJkdY6FHi+N8nKVn/bzUFy9
+        EVOlVZaPUn3rLOVIO4gNyg7a3Tex2/8XwMmoGsHJyHKlJLGezke+IXlBJ/WqkboGkFq6kJo7kaSyHnJ1
+        zvuwV5Sx4Q+AvTgLHB2lkjPnlFT+bojGviH1DiJ19DKAhxvakOo5hc805OOTX20lTFm9CODuJANPl4KM
+        ly+6aHoWSTOK1M8GnX1IKjZoaEeqaUGqVSE9f60jX395tY1NqulvgIdzvjg7s+YHIpKOt2vGkAY0SD39
+        SG3dXKEDqY6HK5v4ZKNH8naysEiKst6TDvrAsaOKl2q1juYBY+NIQyMLarBFLVdorKikibLzJM8rxV0W
+        aeEHxfFgvy8BIChQ8VGtRZqZQZqcQtLq5mr0zdfo4bN9mKakGwnlq+j9RdNxWYj5AeTZCckSAB8feUVV
+        49zA1Pc5i2EGDnKNbrZQM2x2ZprqMv1IK1tH+MaMMBmqMQ7W6iGwX5xpe+7C6y/VTdM0xB9P6GuwhZpr
+        jAyoafL7LGVLW8nMSvFQFSmIwMI1X/GtkDDV4DPGwhYQ77sLu3cnmYefKumoa56iUX6D8Uk2qbxJWGRG
+        FRlh5G1/9s4Ft8NGg9eWAUrAFR+aaDDXmPi+V28Ae0RpYGmZvCkk9GldU+skTfOD4pOdhGWbSFuwnrov
+        GV3FFAC9MsZzJGDB2x35bvgLMP9PGbI64Gi+Uvl2gOKu5Oq6YwSfsNaWQVuIOydwDH4BFmQRQB+hMHWl
+        tVVqzjbLB0FtFwUCTAI5VokIC031ysH/BcxnhzAH2q8IgLcuxUSDPEw3UvHA9sUAgJ8PxVeAopDCdAAA
+        AABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="BtnCD.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="BtnCD.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAANiSURBVDhPdZFtTFN3FMYPziV+UBdnsmT7sC8mxi/L
+        RuLYbq0tpCovOkSBUE0ZS9REmAEEwxZMU0iQzJVpkQDLzAIbjjkxQnEt+DIgtLBudLhqKqRQQgXbEqWj
+        NGBJ7f/ZuZAlarIPv9zk5j6/55xzqfKi7+Pyc66/TpT2J+Zru6hAa15Fl9Op5mfTkcPXsg5ntlNaWhs1
+        HHiPXIeI/siiJMdBOs1spupmf7GhweMpyLds02XfWK/L7Xpbl9tZX1szErvR5cfZSvs/B/e35aem/rAm
+        yKJ3hjPJY/+EfmISyNAUSNPXucOlZQNTurzO8ZKiO4/M3TNifCoOr19g5H4MeoNjSbO37VNT+vsbWdDr
+        yCPYDtAJFhAdP2Vb99kxS4u+dhRGoxPusQiCIQHvjIB7kvEKOB4KVFcNBi+nvnvv0QWCs4hm+1JpZ38G
+        CzTqS5SR3nK+2mDHtG8ZoYjATHBNMDYl4GLJ6LjA0LmTGKsmhJ2EwUN097d9RH3pLMjM+HFr4fHuvomJ
+        BcSEwBNun50TmJ4V8PgEHjDDJj3uFxOeewne7wg9moRvrBqiLjULtNm/VNy9NQXB4cUlgacLAv4nAj7e
+        f4InuXf1Mv4ueg3LNoIIEjxGwnXV+ttmNb3VqWJBWUmvfWVFQMQFlp8JhBYF5uZ5ChZ57DbYct/EwzJC
+        qJ0QuUmIDrKkhtCtIed1JSVSYaH19xlujLJEJsw3kNfwM5OjbjgvFWO8QQeXQYmbGRsQbOZJXLzKeULH
+        bgqQTtfxa58jiumAQGRZYImZDwsEWCq/W2DpM17P3GqFNW8TojxJ3MJ/4hThqoJaSZPS+MHJzy0PBhwR
+        zHGrfAd5jeDTNZl8G1PjSPxLKXHFd4bbWTBcQLiSRI3tEm2gvZomUkh1O44cvfLnnYE5LHJIlqw85+Zo
+        DMaLwzHtR3nm3v30OFxLGDpKaPuQvuLw6z9LfMR9e5opObmeJMm4PTundajfFlhtDc1HUF7RE5eUjfpv
+        lW8Y3Nxq13I4iWo4THL4JYFKZWJJ3Zac3JbvrT2TKCk1Q0qqrahS7thqSSZv9x4eW6JKDif8F35JoFab
+        Vtm168LGlJT6r3fubi0/psyhXiVVXVMQOHj6xeb/FcgoVE3r0lV6alZu3tKhIAt/+MWrwTWI/gU0hkhp
+        GUW6qQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="BtnCD.Location" type="System.Drawing.Point, System.Drawing">
+    <value>193, 26</value>
+  </data>
+  <data name="BtnCD.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="BtnCD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 17</value>
+  </data>
+  <data name="BtnCD.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="BtnCD.ToolTip" xml:space="preserve">
+    <value>Open File</value>
+  </data>
+  <data name="&gt;&gt;BtnCD.Name" xml:space="preserve">
+    <value>BtnCD</value>
+  </data>
+  <data name="&gt;&gt;BtnCD.Type" xml:space="preserve">
+    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=2.8.27.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BtnCD.Parent" xml:space="preserve">
+    <value>tableLayoutPanel4</value>
+  </data>
+  <data name="&gt;&gt;BtnCD.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="tableLayoutPanel4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -874,7 +874,7 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanel4.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="LblComPort" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="CBPort" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="BtnConnectDisconnect" Row="0" RowSpan="3" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="LblAddress" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="TxtAddress" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="LblBaudRate" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="CBSpeed" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,AutoSize,0,Absolute,20" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,20,AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="LblComPort" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="CBPort" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="LblAddress" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="TxtAddress" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="LblBaudRate" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="CBSpeed" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="BtnCD" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,AutoSize,0,Absolute,20" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,20,AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="GBConnection.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
