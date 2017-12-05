@@ -248,17 +248,16 @@ namespace LaserGRBL
 			resources.ApplyResources(this.tableLayoutPanel4, "tableLayoutPanel4");
 			this.tableLayoutPanel4.Controls.Add(this.LblComPort, 0, 0);
 			this.tableLayoutPanel4.Controls.Add(this.CBPort, 1, 0);
-			this.tableLayoutPanel4.Controls.Add(this.BtnConnectDisconnect, 4, 0);
-			this.tableLayoutPanel4.Controls.Add(this.LblBaudRate, 2, 0);
-			this.tableLayoutPanel4.Controls.Add(this.CBSpeed, 3, 0);
-			this.tableLayoutPanel4.Controls.Add(this.LblAddress, 0, 1);
-			this.tableLayoutPanel4.Controls.Add(this.TxtAddress, 1, 1);
+			this.tableLayoutPanel4.Controls.Add(this.BtnConnectDisconnect, 2, 0);
+			this.tableLayoutPanel4.Controls.Add(this.LblAddress, 0, 2);
+			this.tableLayoutPanel4.Controls.Add(this.TxtAddress, 1, 2);
+			this.tableLayoutPanel4.Controls.Add(this.LblBaudRate, 0, 1);
+			this.tableLayoutPanel4.Controls.Add(this.CBSpeed, 1, 1);
 			this.tableLayoutPanel4.Name = "tableLayoutPanel4";
 			// 
 			// LblComPort
 			// 
 			resources.ApplyResources(this.LblComPort, "LblComPort");
-			this.LblComPort.BackColor = System.Drawing.Color.Red;
 			this.LblComPort.Name = "LblComPort";
 			// 
 			// CBPort
@@ -277,7 +276,7 @@ namespace LaserGRBL
 			this.BtnConnectDisconnect.Coloration = System.Drawing.Color.Empty;
 			this.BtnConnectDisconnect.Image = ((System.Drawing.Image)(resources.GetObject("BtnConnectDisconnect.Image")));
 			this.BtnConnectDisconnect.Name = "BtnConnectDisconnect";
-			this.tableLayoutPanel4.SetRowSpan(this.BtnConnectDisconnect, 2);
+			this.tableLayoutPanel4.SetRowSpan(this.BtnConnectDisconnect, 3);
 			this.BtnConnectDisconnect.SizingMode = LaserGRBL.UserControls.ImageButton.SizingModes.StretchImage;
 			this.BtnConnectDisconnect.TabStop = false;
 			this.TT.SetToolTip(this.BtnConnectDisconnect, resources.GetString("BtnConnectDisconnect.ToolTip"));
@@ -305,7 +304,6 @@ namespace LaserGRBL
 			// TxtAddress
 			// 
 			resources.ApplyResources(this.TxtAddress, "TxtAddress");
-			this.tableLayoutPanel4.SetColumnSpan(this.TxtAddress, 3);
 			this.TxtAddress.Name = "TxtAddress";
 			this.TxtAddress.TextChanged += new System.EventHandler(this.TxtHostName_TextChanged);
 			// 
