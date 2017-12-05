@@ -15,8 +15,6 @@ namespace LaserGRBL
 
 			//MMn.Renderer = new MMnRenderer();
 
-			splitContainer1.FixedPanel = FixedPanel.Panel1;
-			splitContainer1.SplitterDistance = (int)Settings.GetObject("MainForm Splitter Position", 260);
 			autoUpdateToolStripMenuItem.Checked = (bool)Settings.GetObject("Auto Update", true);
 
 			if (System.Threading.Thread.CurrentThread.Name == null)
@@ -357,12 +355,6 @@ namespace LaserGRBL
 
 			if (autoUpdateToolStripMenuItem.Checked)
 				GitHub.CheckVersion();
-		}
-
-		private void splitContainer1_SplitterMoved(object sender, SplitterEventArgs e)
-		{
-			Settings.SetObject("MainForm Splitter Position", splitContainer1.SplitterDistance);
-			Settings.Save();
 		}
 
 		private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
