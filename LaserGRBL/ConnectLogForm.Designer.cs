@@ -262,9 +262,9 @@ namespace LaserGRBL
 			// 
 			// CBPort
 			// 
-			resources.ApplyResources(this.CBPort, "CBPort");
 			this.CBPort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.CBPort.FormattingEnabled = true;
+			resources.ApplyResources(this.CBPort, "CBPort");
 			this.CBPort.Name = "CBPort";
 			this.CBPort.SelectedIndexChanged += new System.EventHandler(this.CBPort_SelectedIndexChanged);
 			// 
@@ -290,9 +290,9 @@ namespace LaserGRBL
 			// 
 			// CBSpeed
 			// 
-			resources.ApplyResources(this.CBSpeed, "CBSpeed");
 			this.CBSpeed.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.CBSpeed.FormattingEnabled = true;
+			resources.ApplyResources(this.CBSpeed, "CBSpeed");
 			this.CBSpeed.Name = "CBSpeed";
 			this.CBSpeed.SelectedIndexChanged += new System.EventHandler(this.CBSpeed_SelectedIndexChanged);
 			// 

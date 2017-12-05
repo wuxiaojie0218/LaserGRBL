@@ -613,9 +613,6 @@
   <data name="&gt;&gt;LblComPort.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="CBPort.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
   <data name="CBPort.Location" type="System.Drawing.Point, System.Drawing">
     <value>34, 1</value>
   </data>
@@ -862,9 +859,6 @@
   </data>
   <data name="&gt;&gt;LblBaudRate.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="CBSpeed.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
   </data>
   <data name="CBSpeed.Location" type="System.Drawing.Point, System.Drawing">
     <value>130, 1</value>
