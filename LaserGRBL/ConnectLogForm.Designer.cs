@@ -277,7 +277,7 @@ namespace LaserGRBL
 			this.BtnConnectDisconnect.Image = ((System.Drawing.Image)(resources.GetObject("BtnConnectDisconnect.Image")));
 			this.BtnConnectDisconnect.Name = "BtnConnectDisconnect";
 			this.tableLayoutPanel4.SetRowSpan(this.BtnConnectDisconnect, 3);
-			this.BtnConnectDisconnect.SizingMode = LaserGRBL.UserControls.ImageButton.SizingModes.StretchImage;
+			this.BtnConnectDisconnect.SizingMode = LaserGRBL.UserControls.ImageButton.SizingModes.FixedSize;
 			this.BtnConnectDisconnect.TabStop = false;
 			this.TT.SetToolTip(this.BtnConnectDisconnect, resources.GetString("BtnConnectDisconnect.ToolTip"));
 			this.BtnConnectDisconnect.UseAltImage = false;
