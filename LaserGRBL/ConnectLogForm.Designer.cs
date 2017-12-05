@@ -160,8 +160,8 @@ namespace LaserGRBL
 			// 
 			// TbFileName
 			// 
-			this.tableLayoutPanel5.SetColumnSpan(this.TbFileName, 2);
 			resources.ApplyResources(this.TbFileName, "TbFileName");
+			this.tableLayoutPanel5.SetColumnSpan(this.TbFileName, 2);
 			this.TbFileName.Name = "TbFileName";
 			this.TbFileName.ReadOnly = true;
 			this.TbFileName.TabStop = false;
@@ -170,9 +170,9 @@ namespace LaserGRBL
 			// 
 			// PB
 			// 
+			resources.ApplyResources(this.PB, "PB");
 			this.PB.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
 			this.PB.BorderColor = System.Drawing.Color.Black;
-			resources.ApplyResources(this.PB, "PB");
 			this.PB.DrawProgressString = true;
 			this.PB.FillColor = System.Drawing.Color.White;
 			this.PB.FillStyle = LaserGRBL.UserControls.FillStyles.Solid;
@@ -258,13 +258,14 @@ namespace LaserGRBL
 			// LblComPort
 			// 
 			resources.ApplyResources(this.LblComPort, "LblComPort");
+			this.LblComPort.BackColor = System.Drawing.Color.Red;
 			this.LblComPort.Name = "LblComPort";
 			// 
 			// CBPort
 			// 
+			resources.ApplyResources(this.CBPort, "CBPort");
 			this.CBPort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.CBPort.FormattingEnabled = true;
-			resources.ApplyResources(this.CBPort, "CBPort");
 			this.CBPort.Name = "CBPort";
 			this.CBPort.SelectedIndexChanged += new System.EventHandler(this.CBPort_SelectedIndexChanged);
 			// 
@@ -290,9 +291,9 @@ namespace LaserGRBL
 			// 
 			// CBSpeed
 			// 
+			resources.ApplyResources(this.CBSpeed, "CBSpeed");
 			this.CBSpeed.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.CBSpeed.FormattingEnabled = true;
-			resources.ApplyResources(this.CBSpeed, "CBSpeed");
 			this.CBSpeed.Name = "CBSpeed";
 			this.CBSpeed.SelectedIndexChanged += new System.EventHandler(this.CBSpeed_SelectedIndexChanged);
 			// 

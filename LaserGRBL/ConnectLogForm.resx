@@ -324,8 +324,8 @@
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="TbFileName.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="TbFileName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
   </data>
   <data name="TbFileName.Location" type="System.Drawing.Point, System.Drawing">
     <value>52, 1</value>
@@ -351,8 +351,8 @@
   <data name="&gt;&gt;TbFileName.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="PB.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="PB.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
   </data>
   <data name="PB.Location" type="System.Drawing.Point, System.Drawing">
     <value>52, 23</value>
@@ -613,11 +613,17 @@
   <data name="&gt;&gt;LblComPort.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="CBPort.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
   <data name="CBPort.Location" type="System.Drawing.Point, System.Drawing">
     <value>34, 1</value>
   </data>
   <data name="CBPort.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
+  </data>
+  <data name="CBPort.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>60, 0</value>
   </data>
   <data name="CBPort.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 21</value>
@@ -860,11 +866,17 @@
   <data name="&gt;&gt;LblBaudRate.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="CBSpeed.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
   <data name="CBSpeed.Location" type="System.Drawing.Point, System.Drawing">
     <value>130, 1</value>
   </data>
   <data name="CBSpeed.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
+  </data>
+  <data name="CBSpeed.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>60, 0</value>
   </data>
   <data name="CBSpeed.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 21</value>
@@ -924,7 +936,7 @@
     <value>5</value>
   </data>
   <data name="TxtAddress.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
+    <value>None</value>
   </data>
   <data name="TxtAddress.Location" type="System.Drawing.Point, System.Drawing">
     <value>34, 24</value>
