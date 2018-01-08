@@ -60,6 +60,7 @@
 			this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
 			this.MnGrblConfig = new System.Windows.Forms.ToolStripMenuItem();
 			this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
 			this.MnHotkeys = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripSeparator();
 			this.MnExit = new System.Windows.Forms.ToolStripMenuItem();
@@ -94,7 +95,8 @@
 			this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripSeparator();
 			this.donateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+			this.AwakeTimer = new System.Windows.Forms.Timer(this.components);
+			this.MnStartFromPosition = new System.Windows.Forms.ToolStripMenuItem();
 			this.splitContainer1.Panel1.SuspendLayout();
 			this.splitContainer1.Panel2.SuspendLayout();
 			this.splitContainer1.SuspendLayout();
@@ -322,6 +324,11 @@
 			this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
 			this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
 			// 
+			// toolStripSeparator2
+			// 
+			this.toolStripSeparator2.Name = "toolStripSeparator2";
+			resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
+			// 
 			// MnHotkeys
 			// 
 			resources.ApplyResources(this.MnHotkeys, "MnHotkeys");
@@ -346,7 +353,8 @@
             this.MnReOpenFile,
             this.MnSaveProgram,
             this.toolStripMenuItem1,
-            this.MnFileSend});
+            this.MnFileSend,
+            this.MnStartFromPosition});
 			this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
 			resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
 			this.fileToolStripMenuItem.DropDownOpening += new System.EventHandler(this.fileToolStripMenuItem_DropDownOpening);
@@ -552,10 +560,17 @@
 			this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
 			this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
 			// 
-			// toolStripSeparator2
+			// AwakeTimer
 			// 
-			this.toolStripSeparator2.Name = "toolStripSeparator2";
-			resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
+			this.AwakeTimer.Enabled = true;
+			this.AwakeTimer.Interval = 20000;
+			this.AwakeTimer.Tick += new System.EventHandler(this.AwakeTimer_Tick);
+			// 
+			// MnStartFromPosition
+			// 
+			this.MnStartFromPosition.Name = "MnStartFromPosition";
+			resources.ApplyResources(this.MnStartFromPosition, "MnStartFromPosition");
+			this.MnStartFromPosition.Click += new System.EventHandler(this.MnStartFromPosition_Click);
 			// 
 			// MainForm
 			// 
@@ -648,6 +663,8 @@
 		private System.Windows.Forms.ToolStripMenuItem MnReOpenFile;
 		private System.Windows.Forms.ToolStripMenuItem MnHotkeys;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+		private System.Windows.Forms.Timer AwakeTimer;
+		private System.Windows.Forms.ToolStripMenuItem MnStartFromPosition;
 	}
 }
 
