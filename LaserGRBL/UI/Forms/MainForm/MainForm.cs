@@ -143,7 +143,7 @@ namespace LaserGRBL
 			PreviewForm.TimerUpdate();
 			JogForm.Enabled = Core.JogEnabled;
 		}
-		
+
 		private void TimerUpdate()
 		{
 			SuspendLayout();
@@ -162,6 +162,7 @@ namespace LaserGRBL
 			MnFileOpen.Enabled = Core.CanLoadNewFile;
 			MnSaveProgram.Enabled = Core.HasProgram;
 			MnFileSend.Enabled = Core.CanSendFile;
+			MnStartFromPosition.Enabled = Core.CanSendFile;
 			MnGrblConfig.Enabled = true;
 			//MnExportConfig.Enabled = Core.CanImportExport;
 			//MnImportConfig.Enabled = Core.CanImportExport;
@@ -489,6 +490,18 @@ namespace LaserGRBL
 		private void MnHotkeys_Click(object sender, EventArgs e)
 		{
 			HotkeyManagerForm.CreateAndShowDialog(Core);
+		}
+
+
+		private void AwakeTimer_Tick(object sender, EventArgs e)
+		{
+			if (Core.InProgram)
+				Tools.WinAPI.SignalActvity();
+		}
+
+		private void MnStartFromPosition_Click(object sender, EventArgs e)
+		{
+			Core.RunProgramFromPosition();
 		}
 	}
 
