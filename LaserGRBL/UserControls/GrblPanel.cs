@@ -18,7 +18,14 @@ namespace LaserGRBL.UserControls
 		private float mCurS;
 		private bool mFSTrig;
 
-		public GrblPanel()
+        #region Modified by wuxiaojie 20191225
+        public GPoint manualLBPos { get; set; }
+        public GPoint manualLTPos { get; set; }
+        public GPoint manualRBPos { get; set; }
+        public GPoint manualRTPos { get; set; }
+        #endregion
+
+        public GrblPanel()
 		{
 			InitializeComponent();
 
@@ -28,8 +35,14 @@ namespace LaserGRBL.UserControls
 			SetStyle(ControlStyles.ResizeRedraw, true);
 			mLastWPos = GPoint.Zero;
 			mLastMPos = GPoint.Zero;
+            #region Modified by wuxiaojie 20191225
+            manualLBPos = GPoint.Zero;
+            manualLTPos = GPoint.Zero;
+            manualRBPos = GPoint.Zero;
+            manualRTPos = GPoint.Zero;
+            #endregion
 
-			forcez = (bool)Settings.GetObject("Enale Z Jog Control", false);
+            forcez = (bool)Settings.GetObject("Enale Z Jog Control", false);
 			SettingsForm.SettingsChanged += SettingsForm_SettingsChanged;
 		}
 
@@ -101,8 +114,15 @@ namespace LaserGRBL.UserControls
 							position = position + "\n" + fs;
 						}
 
-						e.Graphics.DrawString(position, Font, b, r, sf);
-					}
+                        #region Modified by wuxiaojie 20191225
+                        string leftTopPos = string.Format("左上 X: {0:0.000} Y: {1:0.000}", manualLTPos.X, manualLTPos.Y);
+                        string rightTopPos = string.Format("  右上 X: {0:0.000} Y: {1:0.000}", manualRTPos.X, manualRTPos.Y);
+                        string leftBottomPos = string.Format("左下 X: {0:0.000} Y: {1:0.000}", manualLBPos.X, manualLBPos.Y);
+                        string rightBottomPos = string.Format("  右下 X: {0:0.000} Y: {1:0.000}", manualRBPos.X, manualRBPos.Y);
+                        position = position + "\n\n" + leftTopPos + rightTopPos + "\n" + leftBottomPos + rightBottomPos;
+                        #endregion
+                        e.Graphics.DrawString(position, Font, b, r, sf);
+                    }
 				}
 			}
 			catch (Exception ex)
@@ -237,5 +257,15 @@ namespace LaserGRBL.UserControls
 		{
 			RecreateBMP();
 		}
-	}
+
+        #region Modified by wuxiaojie 20191225
+        /// <summary>
+        /// 手动定位
+        /// </summary>
+        internal void ManualPos()
+        {
+            RecreateBMP();
+        }
+        #endregion
+    }
 }

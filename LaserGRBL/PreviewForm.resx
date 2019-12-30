@@ -117,18 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Preview.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Preview.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>4, 3</value>
+  </data>
+  <data name="Preview.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="Preview.Size" type="System.Drawing.Size, System.Drawing">
-    <value>646, 330</value>
+    <value>1016, 329</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Preview.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -136,7 +139,7 @@
     <value>Preview</value>
   </data>
   <data name="&gt;&gt;Preview.Type" xml:space="preserve">
-    <value>LaserGRBL.UserControls.GrblPanel, LaserGRBL, Version=2.8.38.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>LaserGRBL.UserControls.GrblPanel, LaserGRBL, Version=3.0.24.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;Preview.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -151,7 +154,186 @@
     <value>GrowAndShrink</value>
   </data>
   <data name="tableLayoutPanel8.ColumnCount" type="System.Int32, mscorlib">
-    <value>9</value>
+    <value>17</value>
+  </data>
+  <data name="BtnLeftTop.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="BtnLeftTop.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACMAAAAmCAYAAABOFCLqAAAABGdBTUEAALGPC/xhBQAAAIdJREFUWEft
+        ke0JgDAQQ7uCmzmcg9YJFEsKpXeBQj+wkMD7o/HywKAoPYnX+awG0zZeeTaYtilKR8GNZ9/7kTTLlB9F
+        59kI9pT51W/yqI/1ku5i2iYXCPWxXtJdTNvkAsqzkQxDMgzJMCTDkAxDMgzJMCTDkAxDMoxmmWVg2sYr
+        zwbTyi4J4QWDxF0gvHwzdwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="BtnLeftTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>383, 2</value>
+  </data>
+  <data name="BtnLeftTop.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="BtnLeftTop.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>49, 49</value>
+  </data>
+  <data name="BtnLeftTop.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>49, 49</value>
+  </data>
+  <data name="BtnLeftTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 49</value>
+  </data>
+  <data name="BtnLeftTop.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <metadata name="TT.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="BtnLeftTop.ToolTip" xml:space="preserve">
+    <value>左上质控点坐标</value>
+  </data>
+  <data name="&gt;&gt;BtnLeftTop.Name" xml:space="preserve">
+    <value>BtnLeftTop</value>
+  </data>
+  <data name="&gt;&gt;BtnLeftTop.Type" xml:space="preserve">
+    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=3.0.24.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BtnLeftTop.Parent" xml:space="preserve">
+    <value>tableLayoutPanel8</value>
+  </data>
+  <data name="&gt;&gt;BtnLeftTop.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BtnRightTop.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="BtnRightTop.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACMAAAAmCAYAAABOFCLqAAAABGdBTUEAALGPC/xhBQAAAIFJREFUWEft
+        kcEJgDAQBNOCnVmchcYK1MA9Ti8LQkxUmIUBkeV2IImQluRl3kZj0zG1cm9sOsaVyveTlJvrweR4VSZX
+        /iFTbn7qmarYdIwrXY+1chLw2HSMK12P9QAZBTIKZBTIKJBRIKNARoGMAhkFMorbMsOw6ZhauTc2Tf6S
+        lHY1+V0grgQpMQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="BtnRightTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 2</value>
+  </data>
+  <data name="BtnRightTop.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="BtnRightTop.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>49, 49</value>
+  </data>
+  <data name="BtnRightTop.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>49, 49</value>
+  </data>
+  <data name="BtnRightTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 49</value>
+  </data>
+  <data name="BtnRightTop.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="BtnRightTop.ToolTip" xml:space="preserve">
+    <value>右上质控点坐标</value>
+  </data>
+  <data name="&gt;&gt;BtnRightTop.Name" xml:space="preserve">
+    <value>BtnRightTop</value>
+  </data>
+  <data name="&gt;&gt;BtnRightTop.Type" xml:space="preserve">
+    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=3.0.24.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BtnRightTop.Parent" xml:space="preserve">
+    <value>tableLayoutPanel8</value>
+  </data>
+  <data name="&gt;&gt;BtnRightTop.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="BtnRightBottom.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="BtnRightBottom.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACMAAAAmCAYAAABOFCLqAAAABGdBTUEAALGPC/xhBQAAAIJJREFUWEft
+        kcEJgDAQBNOCnVmchcYK1MAJp5f9GJIgzMKAyHI7kERIS/K2HqOx6ZhauTc2HeNK5bs3yCiQUSCjQEaB
+        jAIZBTIKZBTIKJBRTJO57wZsOsaV3sdaeQh4bDrGld7HWik394vFMVUmV/4hU25+fqZh2HRMrdwbmyZ/
+        SUonxgRdIJaRzjMAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="BtnRightBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>277, 2</value>
+  </data>
+  <data name="BtnRightBottom.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="BtnRightBottom.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>49, 49</value>
+  </data>
+  <data name="BtnRightBottom.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>49, 49</value>
+  </data>
+  <data name="BtnRightBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 49</value>
+  </data>
+  <data name="BtnRightBottom.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="BtnRightBottom.ToolTip" xml:space="preserve">
+    <value>右下质控点坐标</value>
+  </data>
+  <data name="&gt;&gt;BtnRightBottom.Name" xml:space="preserve">
+    <value>BtnRightBottom</value>
+  </data>
+  <data name="&gt;&gt;BtnRightBottom.Type" xml:space="preserve">
+    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=3.0.24.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BtnRightBottom.Parent" xml:space="preserve">
+    <value>tableLayoutPanel8</value>
+  </data>
+  <data name="&gt;&gt;BtnRightBottom.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="BtnLeftBottom.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="BtnLeftBottom.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACMAAAAmCAYAAABOFCLqAAAABGdBTUEAALGPC/xhBQAAAIhJREFUWEft
+        kYsJwCAMRF2hm3W4Dmon6EciiMmBkEYq3MEDkZh7YGIYT/KxX7ORah1rOBqp1mmG3nM0lEFQBkEZBGUQ
+        lEFQBkEZBGUQlEFQBjEsY9Ev81L2SrVOHQD0y7yUvVKtUwcetoZT7vplXoZl2kfZuPuCNWV+9U3TkGod
+        azgaqWZWSUo3E95dIDB+1mcAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="BtnLeftBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 2</value>
+  </data>
+  <data name="BtnLeftBottom.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="BtnLeftBottom.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>49, 49</value>
+  </data>
+  <data name="BtnLeftBottom.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>49, 49</value>
+  </data>
+  <data name="BtnLeftBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 49</value>
+  </data>
+  <data name="BtnLeftBottom.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="BtnLeftBottom.ToolTip" xml:space="preserve">
+    <value>左下质控点坐标</value>
+  </data>
+  <data name="&gt;&gt;BtnLeftBottom.Name" xml:space="preserve">
+    <value>BtnLeftBottom</value>
+  </data>
+  <data name="&gt;&gt;BtnLeftBottom.Type" xml:space="preserve">
+    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=3.0.24.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BtnLeftBottom.Parent" xml:space="preserve">
+    <value>tableLayoutPanel8</value>
+  </data>
+  <data name="&gt;&gt;BtnLeftBottom.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="BtnReset.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -282,55 +464,58 @@
     <value>BtnReset</value>
   </data>
   <data name="&gt;&gt;BtnReset.Type" xml:space="preserve">
-    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=2.8.38.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=3.0.24.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BtnReset.Parent" xml:space="preserve">
     <value>tableLayoutPanel8</value>
   </data>
   <data name="&gt;&gt;BtnReset.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
+  <metadata name="MNAddCB.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>81, 17</value>
+  </metadata>
   <data name="addCustomButtonToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>197, 22</value>
+    <value>247, 24</value>
   </data>
   <data name="addCustomButtonToolStripMenuItem.Text" xml:space="preserve">
     <value>Add Custom Button</value>
   </data>
   <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 6</value>
+    <value>244, 6</value>
   </data>
   <data name="exportCustomButtonsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>197, 22</value>
+    <value>247, 24</value>
   </data>
   <data name="exportCustomButtonsToolStripMenuItem.Text" xml:space="preserve">
     <value>Export custom buttons</value>
   </data>
   <data name="importCustomButtonsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>197, 22</value>
+    <value>247, 24</value>
   </data>
   <data name="importCustomButtonsToolStripMenuItem.Text" xml:space="preserve">
     <value>Import custom buttons</value>
   </data>
   <data name="MNAddCB.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 98</value>
+    <value>248, 82</value>
   </data>
   <data name="&gt;&gt;MNAddCB.Name" xml:space="preserve">
     <value>MNAddCB</value>
   </data>
   <data name="&gt;&gt;MNAddCB.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="CustomButtonArea.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="CustomButtonArea.Location" type="System.Drawing.Point, System.Drawing">
-    <value>217, 0</value>
+    <value>497, 0</value>
   </data>
   <data name="CustomButtonArea.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="CustomButtonArea.Size" type="System.Drawing.Size, System.Drawing">
-    <value>322, 53</value>
+    <value>414, 54</value>
   </data>
   <data name="CustomButtonArea.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -339,13 +524,13 @@
     <value>CustomButtonArea</value>
   </data>
   <data name="&gt;&gt;CustomButtonArea.Type" xml:space="preserve">
-    <value>LaserGRBL.PreviewForm+MyFlowPanel, LaserGRBL, Version=2.8.38.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>LaserGRBL.PreviewForm+MyFlowPanel, LaserGRBL, Version=3.0.24.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;CustomButtonArea.Parent" xml:space="preserve">
     <value>tableLayoutPanel8</value>
   </data>
   <data name="&gt;&gt;CustomButtonArea.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="BtnUnlock.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -431,13 +616,13 @@
     <value>BtnUnlock</value>
   </data>
   <data name="&gt;&gt;BtnUnlock.Type" xml:space="preserve">
-    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=2.8.38.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=3.0.24.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BtnUnlock.Parent" xml:space="preserve">
     <value>tableLayoutPanel8</value>
   </data>
   <data name="&gt;&gt;BtnUnlock.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
   <data name="BtnHoming.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -549,13 +734,13 @@
     <value>BtnHoming</value>
   </data>
   <data name="&gt;&gt;BtnHoming.Type" xml:space="preserve">
-    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=2.8.38.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=3.0.24.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BtnHoming.Parent" xml:space="preserve">
     <value>tableLayoutPanel8</value>
   </data>
   <data name="&gt;&gt;BtnHoming.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>7</value>
   </data>
   <data name="BtnZeroing.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -644,13 +829,13 @@
     <value>BtnZeroing</value>
   </data>
   <data name="&gt;&gt;BtnZeroing.Type" xml:space="preserve">
-    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=2.8.38.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=3.0.24.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BtnZeroing.Parent" xml:space="preserve">
     <value>tableLayoutPanel8</value>
   </data>
   <data name="&gt;&gt;BtnZeroing.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>8</value>
   </data>
   <data name="BtnResume.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -734,7 +919,7 @@
 </value>
   </data>
   <data name="BtnResume.Location" type="System.Drawing.Point, System.Drawing">
-    <value>546, 2</value>
+    <value>918, 2</value>
   </data>
   <data name="BtnResume.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -758,13 +943,13 @@
     <value>BtnResume</value>
   </data>
   <data name="&gt;&gt;BtnResume.Type" xml:space="preserve">
-    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=2.8.38.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=3.0.24.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BtnResume.Parent" xml:space="preserve">
     <value>tableLayoutPanel8</value>
   </data>
   <data name="&gt;&gt;BtnResume.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>9</value>
   </data>
   <data name="BtnStop.AltImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -942,7 +1127,7 @@
 </value>
   </data>
   <data name="BtnStop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>599, 2</value>
+    <value>971, 2</value>
   </data>
   <data name="BtnStop.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -966,19 +1151,73 @@
     <value>BtnStop</value>
   </data>
   <data name="&gt;&gt;BtnStop.Type" xml:space="preserve">
-    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=2.8.38.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=3.0.24.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BtnStop.Parent" xml:space="preserve">
     <value>tableLayoutPanel8</value>
   </data>
   <data name="&gt;&gt;BtnStop.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>10</value>
+  </data>
+  <data name="BtnGcode.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="BtnGcode.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACUAAAAoCAYAAAB5ADPdAAAABGdBTUEAALGPC/xhBQAAA4ZJREFUWEft
+        mFtIFGEUx6eih6KwiwVtmmWambRuuKytXYgoN127GZVPUpZYaQk9ZEpSkKsb3YjyweiiW+u9ViqzhxLD
+        oiLRtqCyXiKhi9r9SuX8+87suKjlNrMzEcQe+DN83+ye8+M7Z77vzHA++y9Nq48JHz42IosbGpox2C9s
+        kxxxQ0LS/QO12TrD7JnTdEauP8m20AhDQ/rGJFh3pyI3e40s7ctPw9o1ifDT6BAQaojTRsWoA6WZpGt2
+        3i0EUM90VqYaUWzPhS5SC/3MWRgVqP8tmGzTBM9odl6zsgDVQOcJeUINCiyZyEiZgycNyRgzUY+RAb+C
+        yTaCutPoguI7TsgSQVkLMrEkLhr4thnXq5LgH6THiAB9fE8w2aYUag+DWkxQreuBZxt+CybblEJZdm/B
+        6uVG4EM68CgV+L4ZrVeTYYiOgSbEYP4HUOeRn5cBTeBkOArNOGoxoSjPhEb7MmxJmYtBIyIQHmk0i6Gk
+        mzKoajTU7oJx7nwsjDNjUUICTOYExMabsS5lBVauSsCU6dG3xVDSTQkU/+IY+Pc24Ec58LW0t1ALZ8tB
+        0JYjhpJuiqDaj4N/dRJ4VwK87SM44LyxF+RfDCXdFEF5EPkjvz6oP0ldKKqTN8XA59PiuHcwqVIVCqxw
+        vzwtwsd2VsBdlS7IPgGlSF0ovhyPm/YjOCwKVy8XsPlar8DUhaLUoQI7WL/EDQxC8639Ihjbk2SkUlUo
+        /uVx176DOljz0sANmIAWNxhbMYlg6kKReoDtsaRh9PjpeHhrH6uxsl6BPUl9KBKBvaVU3sSKVUsx2j+M
+        9UxlrBs41ft3/Uh9KJYmCI4v4tK5XRgXFIkq2zZ2xjEo9nT2DN6f1IUiIKHVrUOtYyc4LgCltixhLMzT
+        g/CepZbS2y0as/Pur0G5VqgaNeXZApC9hK2QCCTcZ+nDRya69hSbo8O5e/tQF6qrHG33DmGYfziOFW11
+        AVEn8IG1KJ0nkZycCPaehwWmhW4Z58yDKT4Wzx8cFlKsPhRLR0frEdxvOiDMCTVEKWVpo/tXzu0U6ut8
+        RY5bDvt2XKjMwae2IpZKm/pQ9NTx1A91VYBnK9OdDuFKNcWOHuCMC9gt15h/zcDp/6pDqSQflFQphvL6
+        td2TmD/y6x2Uog8cnlQP8uvV24yST0GeRP7IL/kXQ0k3rT5mqrcfzTyJ/JFf8i+G8tn/ZBz3E+5Ct5MN
+        u5XgAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="BtnGcode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>441, 2</value>
+  </data>
+  <data name="BtnGcode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="BtnGcode.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>49, 49</value>
+  </data>
+  <data name="BtnGcode.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>49, 49</value>
+  </data>
+  <data name="BtnGcode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 49</value>
+  </data>
+  <data name="BtnGcode.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;BtnGcode.Name" xml:space="preserve">
+    <value>BtnGcode</value>
+  </data>
+  <data name="&gt;&gt;BtnGcode.Type" xml:space="preserve">
+    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=3.0.24.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BtnGcode.Parent" xml:space="preserve">
+    <value>tableLayoutPanel8</value>
+  </data>
+  <data name="&gt;&gt;BtnGcode.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="tableLayoutPanel8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="tableLayoutPanel8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 337</value>
+    <value>1, 336</value>
   </data>
   <data name="tableLayoutPanel8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -987,7 +1226,7 @@
     <value>1</value>
   </data>
   <data name="tableLayoutPanel8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>650, 53</value>
+    <value>1022, 54</value>
   </data>
   <data name="tableLayoutPanel8.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -996,7 +1235,7 @@
     <value>tableLayoutPanel8</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel8.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -1005,28 +1244,31 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanel8.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="BtnReset" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="CustomButtonArea" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="BtnUnlock" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="BtnHoming" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="BtnZeroing" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="BtnResume" Row="0" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="BtnStop" Row="0" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,AutoSize,0,Absolute,5,AutoSize,0,Percent,100,Absolute,5,AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="BtnLeftTop" Row="0" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="BtnRightTop" Row="0" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="BtnRightBottom" Row="0" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="BtnLeftBottom" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="BtnReset" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="CustomButtonArea" Row="0" RowSpan="1" Column="13" ColumnSpan="1" /&gt;&lt;Control Name="BtnUnlock" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="BtnHoming" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="BtnZeroing" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="BtnResume" Row="0" RowSpan="1" Column="15" ColumnSpan="1" /&gt;&lt;Control Name="BtnStop" Row="0" RowSpan="1" Column="16" ColumnSpan="1" /&gt;&lt;Control Name="BtnGcode" Row="0" RowSpan="1" Column="11" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0,AutoSize,0,Absolute,5,AutoSize,0,Absolute,5,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,Absolute,5,AutoSize,0,Absolute,5,Percent,100,Absolute,5,AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
+  <metadata name="MNRemEditCB.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>236, 17</value>
+  </metadata>
   <data name="RemoveButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 22</value>
+    <value>191, 24</value>
   </data>
   <data name="RemoveButton.Text" xml:space="preserve">
     <value>Remove Button</value>
   </data>
   <data name="editButtonToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 22</value>
+    <value>191, 24</value>
   </data>
   <data name="editButtonToolStripMenuItem.Text" xml:space="preserve">
     <value>Edit Button</value>
   </data>
   <data name="MNRemEditCB.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 48</value>
+    <value>192, 52</value>
   </data>
   <data name="&gt;&gt;MNRemEditCB.Name" xml:space="preserve">
     <value>MNRemEditCB</value>
   </data>
   <data name="&gt;&gt;MNRemEditCB.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1041,7 +1283,7 @@
     <value>2</value>
   </data>
   <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>652, 391</value>
+    <value>1024, 391</value>
   </data>
   <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1050,7 +1292,7 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1061,73 +1303,64 @@
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel8" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Preview" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50" /&gt;&lt;Rows Styles="Percent,50,AutoSize,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>53</value>
+  </metadata>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>652, 391</value>
+    <value>1024, 391</value>
   </data>
   <data name="&gt;&gt;addCustomButtonToolStripMenuItem.Name" xml:space="preserve">
     <value>addCustomButtonToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;addCustomButtonToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;toolStripMenuItem1.Name" xml:space="preserve">
     <value>toolStripMenuItem1</value>
   </data>
   <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;exportCustomButtonsToolStripMenuItem.Name" xml:space="preserve">
     <value>exportCustomButtonsToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;exportCustomButtonsToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;importCustomButtonsToolStripMenuItem.Name" xml:space="preserve">
     <value>importCustomButtonsToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;importCustomButtonsToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;TT.Name" xml:space="preserve">
     <value>TT</value>
   </data>
   <data name="&gt;&gt;TT.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;RemoveButton.Name" xml:space="preserve">
     <value>RemoveButton</value>
   </data>
   <data name="&gt;&gt;RemoveButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;editButtonToolStripMenuItem.Name" xml:space="preserve">
     <value>editButtonToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;editButtonToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>PreviewForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <metadata name="TT.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="MNAddCB.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>81, 17</value>
-  </metadata>
-  <metadata name="MNRemEditCB.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>236, 17</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>52</value>
-  </metadata>
 </root>

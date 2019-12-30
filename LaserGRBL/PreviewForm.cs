@@ -11,6 +11,8 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Collections.Generic;
+using System.Text;
+using System.Configuration;
 
 namespace LaserGRBL
 {
@@ -392,7 +394,353 @@ namespace LaserGRBL
 			Core.SetNewZero();
 		}
 
-		private void exportCustomButtonsToolStripMenuItem_Click(object sender, EventArgs e)
+        #region Modified by wuxiaojie 20191225
+        /// <summary>
+        /// 记录左下角坐标
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnLeftBottom_Click(object sender, EventArgs e)
+        {
+            Preview.manualLBPos = Core.MachinePosition;
+            string text = "X: " + Preview.manualLBPos.X.ToString("0.000") + "  Y: " + Preview.manualLBPos.Y.ToString("0.000");
+            if (MessageBox.Show(text, "左下质控点坐标", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                Preview.ManualPos();
+            }
+        }
+
+        /// <summary>
+        /// 记录右下角坐标
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnRightBottom_Click(object sender, EventArgs e)
+        {
+            Preview.manualRBPos = Core.MachinePosition;
+            string text = "X: " + Preview.manualRBPos.X.ToString("0.000") + "  Y: " + Preview.manualRBPos.Y.ToString("0.000");
+            if (MessageBox.Show(text, "右下质控点坐标", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                Preview.ManualPos();
+            }
+        }
+
+        /// <summary>
+        /// 记录左上角坐标
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnLeftTop_Click(object sender, EventArgs e)
+        {
+            Preview.manualLTPos = Core.MachinePosition;
+            string text = "X: " + Preview.manualLTPos.X.ToString("0.000") + "  Y: " + Preview.manualLTPos.Y.ToString("0.000");
+            if (MessageBox.Show(text, "左上质控点坐标", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                Preview.ManualPos();
+            }
+        }
+
+        /// <summary>
+        /// 记录右上角坐标
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnRightTop_Click(object sender, EventArgs e)
+        {
+            Preview.manualRTPos = Core.MachinePosition;
+            string text = "X: " + Preview.manualRTPos.X.ToString("0.000") + "  Y: " + Preview.manualRTPos.Y.ToString("0.000");
+            if (MessageBox.Show(text, "右上质控点坐标", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                Preview.ManualPos();
+            }
+        }
+
+        /// <summary>
+        /// 生成gcode
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnGcode_Click(object sender, EventArgs e)
+        {
+            StringBuilder sb = CalcPos();
+
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "gcode文件(*.gcode)|*.gcode";
+            sfd.FileName = "Cut" + DateTime.Now.ToString("yyyyMMddHHmmss");
+            sfd.RestoreDirectory = true;
+
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                string filename = sfd.FileName.ToString();
+                System.IO.FileStream fs = (System.IO.FileStream)sfd.OpenFile();
+                byte[] array = Encoding.ASCII.GetBytes(sb.ToString());
+                fs.Write(array, 0, array.Length);
+                fs.Close();
+
+                // 打开文件
+                Core.OpenFile(ParentForm, filename);
+            }
+        }
+
+        /// <summary>
+        /// 计算坐标
+        /// </summary>
+        /// <returns></returns>
+        private StringBuilder CalcPos()
+        {
+            #region 参数
+            // 行
+            int row = Convert.ToInt32(ConfigurationManager.AppSettings.Get("row"));
+            // 列
+            int column = Convert.ToInt32(ConfigurationManager.AppSettings.Get("column"));
+            // 延长5mm
+            int extend = Convert.ToInt32(ConfigurationManager.AppSettings.Get("extend"));
+            // 运行速度
+            int speed = Convert.ToInt32(ConfigurationManager.AppSettings.Get("speed"));
+            // 功率
+            int power = Convert.ToInt32(ConfigurationManager.AppSettings.Get("power"));
+            // 质控点上/左边距
+            float paddingTL = (9.5f - 1.25f * 3) / 2;
+            // 质控点下/右边距
+            float paddingBR = 9.5f - paddingTL;
+            #endregion
+
+            #region 手工定位点
+            // 定位点坐标
+            // 左上
+            GPoint manualLTPos = Preview.manualLTPos;
+            // 右上
+            GPoint manualRTPos = Preview.manualRTPos;
+            // 左下
+            GPoint manualLBPos = Preview.manualLBPos;
+            // 右下
+            GPoint manualRBPos = Preview.manualRBPos;
+
+            // 定位点向量模
+            // 左边
+            float manualLLength = (float)Math.Sqrt(Math.Pow((manualLTPos.X - manualLBPos.X), 2) + Math.Pow((manualLTPos.Y - manualLBPos.Y), 2));
+            // 右边
+            float manualRLength = (float)Math.Sqrt(Math.Pow((manualRTPos.X - manualRBPos.X), 2) + Math.Pow((manualRTPos.Y - manualRBPos.Y), 2));
+            // 上边
+            float manualTLength = (float)Math.Sqrt(Math.Pow((manualRTPos.X - manualLTPos.X), 2) + Math.Pow((manualRTPos.Y - manualLTPos.Y), 2));
+            // 下边
+            float manualBLength = (float)Math.Sqrt(Math.Pow((manualRBPos.X - manualLBPos.X), 2) + Math.Pow((manualRBPos.Y - manualLBPos.Y), 2));
+
+            // 定位点单位向量
+            // 左下-左上
+            GPoint manualLBLTVector = new GPoint();
+            manualLBLTVector.X = (manualLTPos.X - manualLBPos.X) / manualLLength;
+            manualLBLTVector.Y = (manualLTPos.Y - manualLBPos.Y) / manualLLength;
+            // 右下-右上
+            GPoint manualRBRTVector = new GPoint();
+            manualRBRTVector.X = (manualRTPos.X - manualRBPos.X) / manualRLength;
+            manualRBRTVector.Y = (manualRTPos.Y - manualRBPos.Y) / manualRLength;
+            // 左上-右上
+            GPoint manualLTRTVector = new GPoint();
+            manualLTRTVector.X = (manualRTPos.X - manualLTPos.X) / manualTLength;
+            manualLTRTVector.Y = (manualRTPos.Y - manualLTPos.Y) / manualTLength;
+            // 左下-右下
+            GPoint manualLBRBVector = new GPoint();
+            manualLBRBVector.X = (manualRBPos.X - manualLBPos.X) / manualBLength;
+            manualLBRBVector.Y = (manualRBPos.Y - manualLBPos.Y) / manualBLength;
+
+            // 边界点坐标
+            // 左上边界点
+            GPoint borderLTPos = new GPoint();
+            borderLTPos.X = manualLTPos.X + paddingTL * manualLBLTVector.X - paddingTL * manualLTRTVector.X;
+            borderLTPos.Y = manualLTPos.Y + paddingTL * manualLBLTVector.Y - paddingTL * manualLTRTVector.Y;
+            // 左下边界点
+            GPoint borderLBPos = new GPoint();
+            borderLBPos.X = manualLBPos.X - paddingBR * manualLBLTVector.X - paddingTL * manualLBRBVector.X;
+            borderLBPos.Y = manualLBPos.Y - paddingBR * manualLBLTVector.Y - paddingTL * manualLBRBVector.Y;
+            // 右上边界点
+            GPoint borderRTPos = new GPoint();
+            borderRTPos.X = manualRTPos.X + paddingTL * manualRBRTVector.X + paddingBR * manualLTRTVector.X;
+            borderRTPos.Y = manualRTPos.Y + paddingTL * manualRBRTVector.Y + paddingBR * manualLTRTVector.Y;
+            // 右下边界点
+            GPoint borderRBPos = new GPoint();
+            borderRBPos.X = manualRBPos.X - paddingBR * manualRBRTVector.X + paddingBR * manualLBRBVector.X;
+            borderRBPos.Y = manualRBPos.Y - paddingBR * manualRBRTVector.Y + paddingBR * manualLBRBVector.Y;
+            #endregion
+
+            #region 计算边界点
+            // 边界点向量模
+            // 左边
+            float borderLLength = (float)Math.Sqrt(Math.Pow((borderLTPos.X - borderLBPos.X), 2) + Math.Pow((borderLTPos.Y - borderLBPos.Y), 2));
+            // 右边
+            float borderRLength = (float)Math.Sqrt(Math.Pow((borderRTPos.X - borderRBPos.X), 2) + Math.Pow((borderRTPos.Y - borderRBPos.Y), 2));
+            // 上边
+            float borderTLength = (float)Math.Sqrt(Math.Pow((borderRTPos.X - borderLTPos.X), 2) + Math.Pow((borderRTPos.Y - borderLTPos.Y), 2));
+            // 下边
+            float borderBLength = (float)Math.Sqrt(Math.Pow((borderRBPos.X - borderLBPos.X), 2) + Math.Pow((borderRBPos.Y - borderLBPos.Y), 2));
+
+            // 边界点单位向量
+            // 左下-左上
+            GPoint borderLBLTVector = new GPoint();
+            borderLBLTVector.X = (borderLTPos.X - borderLBPos.X) / borderLLength;
+            borderLBLTVector.Y = (borderLTPos.Y - borderLBPos.Y) / borderLLength;
+            // 右下-右上
+            GPoint borderRBRTVector = new GPoint();
+            borderRBRTVector.X = (borderRTPos.X - borderRBPos.X) / borderRLength;
+            borderRBRTVector.Y = (borderRTPos.Y - borderRBPos.Y) / borderRLength;
+            // 左上-右上
+            GPoint borderLTRTVector = new GPoint();
+            borderLTRTVector.X = (borderRTPos.X - borderLTPos.X) / borderTLength;
+            borderLTRTVector.Y = (borderRTPos.Y - borderLTPos.Y) / borderTLength;
+            // 左下-右下
+            GPoint borderLBRBVector = new GPoint();
+            borderLBRBVector.X = (borderRBPos.X - borderLBPos.X) / borderBLength;
+            borderLBRBVector.Y = (borderRBPos.Y - borderLBPos.Y) / borderBLength;
+
+            // 左边界点集合
+            Dictionary<int, GPoint> borderMapLPos = new Dictionary<int, GPoint>();
+            for (int i = 0; i < row + 1; i++)
+            {
+                GPoint pos = new GPoint();
+                pos.X = borderLBPos.X + borderLBLTVector.X * i * (borderLLength / row);
+                pos.Y = borderLBPos.Y + borderLBLTVector.Y * i * (borderLLength / row);
+                borderMapLPos.Add(i, pos);
+            }
+            // 右边界点集合
+            Dictionary<int, GPoint> borderMapRPos = new Dictionary<int, GPoint>();
+            for (int i = 0; i < row + 1; i++)
+            {
+                GPoint pos = new GPoint();
+                pos.X = borderRBPos.X + borderRBRTVector.X * i * (borderRLength / row);
+                pos.Y = borderRBPos.Y + borderRBRTVector.Y * i * (borderRLength / row);
+                borderMapRPos.Add(i, pos);
+            }
+            // 上边界点集合
+            Dictionary<int, GPoint> borderMapTPos = new Dictionary<int, GPoint>();
+            for (int i = 0; i < column + 1; i++)
+            {
+                GPoint pos = new GPoint();
+                pos.X = borderLTPos.X + borderLTRTVector.X * i * (borderTLength / column);
+                pos.Y = borderLTPos.Y + borderLTRTVector.Y * i * (borderTLength / column);
+                borderMapTPos.Add(i, pos);
+            }
+            // 下边界点集合
+            Dictionary<int, GPoint> borderMapBPos = new Dictionary<int, GPoint>();
+            for (int i = 0; i < column + 1; i++)
+            {
+                GPoint pos = new GPoint();
+                pos.X = borderLBPos.X + borderLBRBVector.X * i * (borderBLength / column);
+                pos.Y = borderLBPos.Y + borderLBRBVector.Y * i * (borderBLength / column);
+                borderMapBPos.Add(i, pos);
+            }
+            #endregion
+
+            #region 计算延长点
+            // 左、右延长点集合
+            Dictionary<int, GPoint> extendMapLPos = new Dictionary<int, GPoint>();
+            Dictionary<int, GPoint> extendMapRPos = new Dictionary<int, GPoint>();
+            for (int i = 0; i < row + 1; i++)
+            {
+                // 单位向量
+                GPoint pos = new GPoint();
+                pos.X = borderMapRPos[i].X - borderMapLPos[i].X;
+                pos.Y = borderMapRPos[i].Y - borderMapLPos[i].Y;
+                float length = (float)Math.Sqrt(pos.X * pos.X + pos.Y * pos.Y);
+                // 左延长点
+                GPoint leftPos = new GPoint();
+                leftPos.X = borderMapLPos[i].X - extend * (pos.X / length);
+                leftPos.Y = borderMapLPos[i].Y - extend * (pos.Y / length);
+                extendMapLPos.Add(i, leftPos);
+                // 右延长点
+                GPoint rightPos = new GPoint();
+                rightPos.X = borderMapRPos[i].X + extend * (pos.X / length);
+                rightPos.Y = borderMapRPos[i].Y + extend * (pos.Y / length);
+                extendMapRPos.Add(i, rightPos);
+            }
+
+            // 上、下延长点集合
+            Dictionary<int, GPoint> extendMapTPos = new Dictionary<int, GPoint>();
+            Dictionary<int, GPoint> extendMapBPos = new Dictionary<int, GPoint>();
+            for (int i = 0; i < column + 1; i++)
+            {
+                // 单位向量
+                GPoint pos = new GPoint();
+                pos.X = borderMapTPos[i].X - borderMapBPos[i].X;
+                pos.Y = borderMapTPos[i].Y - borderMapBPos[i].Y;
+                float length = (float)Math.Sqrt(pos.X * pos.X + pos.Y * pos.Y);
+                // 上延长点
+                GPoint topPos = new GPoint();
+                topPos.X = borderMapTPos[i].X + extend * (pos.X / length);
+                topPos.Y = borderMapTPos[i].Y + extend * (pos.Y / length);
+                extendMapTPos.Add(i, topPos);
+                // 下延长点
+                GPoint bottomPos = new GPoint();
+                bottomPos.X = borderMapBPos[i].X - extend * (pos.X / length);
+                bottomPos.Y = borderMapBPos[i].Y - extend * (pos.Y / length);
+                extendMapBPos.Add(i, bottomPos);
+            }
+            #endregion
+
+            #region gcode
+            StringBuilder sb = new StringBuilder();
+            // 关掉主轴和激光
+            sb.Append("M5 S0" + Environment.NewLine);
+            // 以毫米作为单位
+            sb.Append("G21" + Environment.NewLine);
+            // 设定运行速度
+            sb.Append("G1 F" + speed + Environment.NewLine);
+            // 回到0点
+            sb.Append("G1 X0 Y0" + Environment.NewLine);
+
+            // 行切
+            for (int i = 0; i < row + 1; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    sb.Append("G1 X" + extendMapLPos[i].X + " Y" + extendMapLPos[i].Y + Environment.NewLine);
+                    sb.Append("G4 P0" + Environment.NewLine);
+                    sb.Append("M3 S" + power + Environment.NewLine);
+                    sb.Append("G4 P0" + Environment.NewLine);
+                    sb.Append("G1 X" + extendMapRPos[i].X + " Y" + extendMapRPos[i].Y + Environment.NewLine);
+                    sb.Append("M5 S0" + Environment.NewLine);
+                }
+                else
+                {
+                    sb.Append("G1 X" + extendMapRPos[i].X + " Y" + extendMapRPos[i].Y + Environment.NewLine);
+                    sb.Append("G4 P0" + Environment.NewLine);
+                    sb.Append("M3 S" + power + Environment.NewLine);
+                    sb.Append("G4 P0" + Environment.NewLine);
+                    sb.Append("G1 X" + extendMapLPos[i].X + " Y" + extendMapLPos[i].Y + Environment.NewLine);
+                    sb.Append("M5 S0" + Environment.NewLine);
+                }
+            }
+
+            // 列切
+            for (int i = 0; i < column + 1; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    sb.Append("G1 X" + extendMapTPos[i].X + " Y" + extendMapTPos[i].Y + Environment.NewLine);
+                    sb.Append("G4 P0" + Environment.NewLine);
+                    sb.Append("M3 S" + power + Environment.NewLine);
+                    sb.Append("G4 P0" + Environment.NewLine);
+                    sb.Append("G1 X" + extendMapBPos[i].X + " Y" + extendMapBPos[i].Y + Environment.NewLine);
+                    sb.Append("M5 S0" + Environment.NewLine);
+                }
+                else
+                {
+                    sb.Append("G1 X" + extendMapBPos[i].X + " Y" + extendMapBPos[i].Y + Environment.NewLine);
+                    sb.Append("G4 P0" + Environment.NewLine);
+                    sb.Append("M3 S" + power + Environment.NewLine);
+                    sb.Append("G4 P0" + Environment.NewLine);
+                    sb.Append("G1 X" + extendMapTPos[i].X + " Y" + extendMapTPos[i].Y + Environment.NewLine);
+                    sb.Append("M5 S0" + Environment.NewLine);
+                }
+            }
+
+            sb.Append("G1 X0 Y0");
+
+            return sb;
+            #endregion
+        }
+        #endregion
+
+        private void exportCustomButtonsToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			CustomButtons.Export();
 		}
@@ -410,6 +758,6 @@ namespace LaserGRBL
 		{
 			exportCustomButtonsToolStripMenuItem.Enabled = CustomButtons.Count > 0;
 		}
-	}
+    }
 
 }
