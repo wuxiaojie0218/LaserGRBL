@@ -283,6 +283,7 @@ namespace LaserGRBL
             this.BtnGcode.Image = ((System.Drawing.Image)(resources.GetObject("BtnGcode.Image")));
             this.BtnGcode.Name = "BtnGcode";
             this.BtnGcode.SizingMode = LaserGRBL.UserControls.ImageButton.SizingModes.FixedSize;
+            this.TT.SetToolTip(this.BtnGcode, resources.GetString("BtnGcode.ToolTip"));
             this.BtnGcode.UseAltImage = false;
             this.BtnGcode.Click += new System.EventHandler(this.BtnGcode_Click);
             // 

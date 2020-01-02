@@ -114,6 +114,12 @@
     </Compile>
     <Compile Include="Autotrace\Autotrace.cs" />
     <Compile Include="ComWrapper\ComLogger.cs" />
+    <Compile Include="CutParamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CutParamForm.Designer.cs">
+      <DependentUpon>CutParamForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Firmware\FlashGrbl.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -750,6 +756,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomButtonForm.ru.resx">
       <DependentUpon>CustomButtonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CutParamForm.resx">
+      <DependentUpon>CutParamForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Firmware\FlashGrbl.resx">
       <DependentUpon>FlashGrbl.cs</DependentUpon>

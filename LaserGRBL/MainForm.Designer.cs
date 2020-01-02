@@ -106,6 +106,7 @@
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripSeparator();
             this.donateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.裁膜参数ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AwakeTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -264,7 +265,8 @@
             this.schemaToolStripMenuItem,
             this.linguaToolStripMenuItem,
             this.toolsToolStripMenuItem,
-            this.questionMarkToolStripMenuItem});
+            this.questionMarkToolStripMenuItem,
+            this.裁膜参数ToolStripMenuItem});
             resources.ApplyResources(this.MMn, "MMn");
             this.MMn.Name = "MMn";
             // 
@@ -649,6 +651,12 @@
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
+            // 裁膜参数ToolStripMenuItem
+            // 
+            this.裁膜参数ToolStripMenuItem.Name = "裁膜参数ToolStripMenuItem";
+            resources.ApplyResources(this.裁膜参数ToolStripMenuItem, "裁膜参数ToolStripMenuItem");
+            this.裁膜参数ToolStripMenuItem.Click += new System.EventHandler(this.裁膜参数ToolStripMenuItem_Click);
+            // 
             // AwakeTimer
             // 
             this.AwakeTimer.Enabled = true;
@@ -759,6 +767,7 @@
 		private System.Windows.Forms.ToolStripMenuItem configurationWizardToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem installCH340DriverToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem activateExtendedLogToolStripMenuItem;
-	}
+        private System.Windows.Forms.ToolStripMenuItem 裁膜参数ToolStripMenuItem;
+    }
 }
 

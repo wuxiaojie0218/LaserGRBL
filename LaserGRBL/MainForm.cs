@@ -590,10 +590,18 @@ namespace LaserGRBL
 				ComWrapper.ComLogger.FileName = null;
 			}
 		}
-	}
+
+        #region Modified by wuxiaojie 20200102
+        private void 裁膜参数ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CutParamForm form = new CutParamForm();
+            form.ShowDialog();
+        }
+        #endregion
+    }
 
 
-	public class MMnRenderer : ToolStripProfessionalRenderer
+    public class MMnRenderer : ToolStripProfessionalRenderer
 	{
 		public MMnRenderer() : base(new CustomMenuColor()) { }
 

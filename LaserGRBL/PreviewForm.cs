@@ -402,7 +402,7 @@ namespace LaserGRBL
         /// <param name="e"></param>
         private void BtnLeftBottom_Click(object sender, EventArgs e)
         {
-            Preview.manualLBPos = Core.MachinePosition;
+            Preview.manualLBPos = Core.WorkPosition;
             string text = "X: " + Preview.manualLBPos.X.ToString("0.000") + "  Y: " + Preview.manualLBPos.Y.ToString("0.000");
             if (MessageBox.Show(text, "左下质控点坐标", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
@@ -417,7 +417,7 @@ namespace LaserGRBL
         /// <param name="e"></param>
         private void BtnRightBottom_Click(object sender, EventArgs e)
         {
-            Preview.manualRBPos = Core.MachinePosition;
+            Preview.manualRBPos = Core.WorkPosition;
             string text = "X: " + Preview.manualRBPos.X.ToString("0.000") + "  Y: " + Preview.manualRBPos.Y.ToString("0.000");
             if (MessageBox.Show(text, "右下质控点坐标", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
@@ -432,7 +432,7 @@ namespace LaserGRBL
         /// <param name="e"></param>
         private void BtnLeftTop_Click(object sender, EventArgs e)
         {
-            Preview.manualLTPos = Core.MachinePosition;
+            Preview.manualLTPos = Core.WorkPosition;
             string text = "X: " + Preview.manualLTPos.X.ToString("0.000") + "  Y: " + Preview.manualLTPos.Y.ToString("0.000");
             if (MessageBox.Show(text, "左上质控点坐标", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
@@ -447,7 +447,7 @@ namespace LaserGRBL
         /// <param name="e"></param>
         private void BtnRightTop_Click(object sender, EventArgs e)
         {
-            Preview.manualRTPos = Core.MachinePosition;
+            Preview.manualRTPos = Core.WorkPosition;
             string text = "X: " + Preview.manualRTPos.X.ToString("0.000") + "  Y: " + Preview.manualRTPos.Y.ToString("0.000");
             if (MessageBox.Show(text, "右上质控点坐标", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
@@ -499,10 +499,14 @@ namespace LaserGRBL
             int speed = Convert.ToInt32(ConfigurationManager.AppSettings.Get("speed"));
             // 功率
             int power = Convert.ToInt32(ConfigurationManager.AppSettings.Get("power"));
+            // 点到点的距离
+            float ptp = Convert.ToSingle(ConfigurationManager.AppSettings.Get("ptp"));
+            // 膜的大小
+            float size = Convert.ToSingle(ConfigurationManager.AppSettings.Get("size"));
             // 质控点上/左边距
-            float paddingTL = (9.5f - 1.25f * 3) / 2;
+            float paddingTL = (size - ptp * 3) / 2;
             // 质控点下/右边距
-            float paddingBR = 9.5f - paddingTL;
+            float paddingBR = size - paddingTL;
             #endregion
 
             #region 手工定位点
