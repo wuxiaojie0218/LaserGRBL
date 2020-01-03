@@ -462,6 +462,12 @@ namespace LaserGRBL
         /// <param name="e"></param>
         private void BtnGcode_Click(object sender, EventArgs e)
         {
+            if (!CheckPos(Preview.manualLBPos, Preview.manualRBPos, Preview.manualLTPos, Preview.manualRTPos))
+            {
+                MessageBox.Show("质控点定位有误，请重新定位！", "提示");
+                return;
+            }
+
             StringBuilder sb = CalcPos();
 
             SaveFileDialog sfd = new SaveFileDialog();
@@ -480,6 +486,26 @@ namespace LaserGRBL
                 // 打开文件
                 Core.OpenFile(ParentForm, filename);
             }
+        }
+
+        /// <summary>
+        /// 判断四边形凹凸性
+        /// </summary>
+        /// <param name="g1">左下</param>
+        /// <param name="g2">右下</param>
+        /// <param name="g3">左上</param>
+        /// <param name="g4">右上</param>
+        /// <returns></returns>
+        private bool CheckPos(GPoint g1, GPoint g2, GPoint g3, GPoint g4)
+        {
+            double z1, z2, z3, z4;
+
+            z1 = ((g2.X - g1.X) * (g4.Y - g1.Y) - (g4.X - g1.X) * (g2.Y - g1.Y));
+            z2 = ((g4.X - g1.X) * (g3.Y - g1.Y) - (g3.X - g1.X) * (g4.Y - g1.Y));
+            z3 = ((g4.X - g2.X) * (g3.Y - g2.Y) - (g3.X - g2.X) * (g4.Y - g2.Y));
+            z4 = ((g3.X - g2.X) * (g1.Y - g2.Y) - (g1.X - g2.X) * (g3.Y - g2.Y));
+
+            return (z1 * z2 > 0) && (z3 * z4 > 0);
         }
 
         /// <summary>
