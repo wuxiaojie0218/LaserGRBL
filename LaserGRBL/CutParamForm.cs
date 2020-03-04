@@ -30,7 +30,7 @@ namespace LaserGRBL
         /// <param name="e"></param>
         private void cbSpeed_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ConfigurationManager.AppSettings.Set("speed", cbSpeed.SelectedItem.ToString());
+            AddUpdateAppSettings("speed", cbSpeed.SelectedItem.ToString());
         }
 
         /// <summary>
@@ -40,7 +40,7 @@ namespace LaserGRBL
         /// <param name="e"></param>
         private void cbPower_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ConfigurationManager.AppSettings.Set("power", cbPower.SelectedItem.ToString());
+            AddUpdateAppSettings("power", cbPower.SelectedItem.ToString());
         }
 
         /// <summary>
@@ -50,7 +50,7 @@ namespace LaserGRBL
         /// <param name="e"></param>
         private void cbRow_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ConfigurationManager.AppSettings.Set("row", cbRow.SelectedItem.ToString());
+            AddUpdateAppSettings("row", cbRow.SelectedItem.ToString());
         }
 
         /// <summary>
@@ -60,7 +60,7 @@ namespace LaserGRBL
         /// <param name="e"></param>
         private void cbColumn_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ConfigurationManager.AppSettings.Set("column", cbColumn.SelectedItem.ToString());
+            AddUpdateAppSettings("column", cbColumn.SelectedItem.ToString());
         }
 
         /// <summary>
@@ -70,7 +70,7 @@ namespace LaserGRBL
         /// <param name="e"></param>
         private void cbSize_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ConfigurationManager.AppSettings.Set("size", cbSize.SelectedItem.ToString());
+            AddUpdateAppSettings("size", cbSize.SelectedItem.ToString());
         }
 
         /// <summary>
@@ -80,7 +80,7 @@ namespace LaserGRBL
         /// <param name="e"></param>
         private void cbPtp_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ConfigurationManager.AppSettings.Set("ptp", cbPtp.SelectedItem.ToString());
+            AddUpdateAppSettings("ptp", cbPtp.SelectedItem.ToString());
         }
 
         /// <summary>
@@ -90,7 +90,35 @@ namespace LaserGRBL
         /// <param name="e"></param>
         private void cbExtend_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ConfigurationManager.AppSettings.Set("extend", cbExtend.SelectedItem.ToString());
+            AddUpdateAppSettings("extend", cbExtend.SelectedItem.ToString());
+        }
+
+        /// <summary>
+        /// 新增或更新配置文件键值
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="value"></param>
+        private static void AddUpdateAppSettings(string key, string value)
+        {
+            try
+            {
+                var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+                var settings = configFile.AppSettings.Settings;
+                if (settings[key] == null)
+                {
+                    settings.Add(key, value);
+                }
+                else
+                {
+                    settings[key].Value = value;
+                }
+                configFile.Save(ConfigurationSaveMode.Modified);
+                ConfigurationManager.RefreshSection(configFile.AppSettings.SectionInformation.Name);
+            }
+            catch (ConfigurationErrorsException)
+            {
+                MessageBox.Show("修改配置文件出错！");
+            }
         }
     }
 }
