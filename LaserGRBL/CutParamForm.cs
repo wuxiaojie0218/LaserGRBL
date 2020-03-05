@@ -15,7 +15,8 @@ namespace LaserGRBL
         {
             InitializeComponent();
             cbSpeed.SelectedItem = ConfigurationManager.AppSettings.Get("speed");
-            cbPower.SelectedItem = ConfigurationManager.AppSettings.Get("power");
+            cbXPower.SelectedItem = ConfigurationManager.AppSettings.Get("xpower");
+            cbYPower.SelectedItem = ConfigurationManager.AppSettings.Get("ypower");
             cbRow.SelectedItem = ConfigurationManager.AppSettings.Get("row");
             cbColumn.SelectedItem = ConfigurationManager.AppSettings.Get("column");
             cbSize.SelectedItem = ConfigurationManager.AppSettings.Get("size");
@@ -34,13 +35,23 @@ namespace LaserGRBL
         }
 
         /// <summary>
-        /// 激光功率
+        /// X轴激光功率
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void cbPower_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbXPower_SelectedIndexChanged(object sender, EventArgs e)
         {
-            AddUpdateAppSettings("power", cbPower.SelectedItem.ToString());
+            AddUpdateAppSettings("xpower", cbXPower.SelectedItem.ToString());
+        }
+
+        /// <summary>
+        /// Y轴激光功率
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void cbYPower_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AddUpdateAppSettings("ypower", cbYPower.SelectedItem.ToString());
         }
 
         /// <summary>

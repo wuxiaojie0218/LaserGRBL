@@ -523,8 +523,10 @@ namespace LaserGRBL
             int extend = Convert.ToInt32(ConfigurationManager.AppSettings.Get("extend"));
             // 运行速度
             int speed = Convert.ToInt32(ConfigurationManager.AppSettings.Get("speed"));
-            // 功率
-            int power = Convert.ToInt32(ConfigurationManager.AppSettings.Get("power"));
+            // X轴功率
+            int xpower = Convert.ToInt32(ConfigurationManager.AppSettings.Get("xpower"));
+            // Y轴功率
+            int ypower = Convert.ToInt32(ConfigurationManager.AppSettings.Get("ypower"));
             // 点到点的距离
             float ptp = Convert.ToSingle(ConfigurationManager.AppSettings.Get("ptp"));
             // 膜的大小
@@ -724,7 +726,7 @@ namespace LaserGRBL
                 {
                     sb.Append("G1 X" + extendMapLPos[i].X + " Y" + extendMapLPos[i].Y + Environment.NewLine);
                     sb.Append("G4 P0" + Environment.NewLine);
-                    sb.Append("M3 S" + power + Environment.NewLine);
+                    sb.Append("M3 S" + xpower + Environment.NewLine);
                     sb.Append("G4 P0" + Environment.NewLine);
                     sb.Append("G1 X" + extendMapRPos[i].X + " Y" + extendMapRPos[i].Y + Environment.NewLine);
                     sb.Append("M5 S0" + Environment.NewLine);
@@ -733,7 +735,7 @@ namespace LaserGRBL
                 {
                     sb.Append("G1 X" + extendMapRPos[i].X + " Y" + extendMapRPos[i].Y + Environment.NewLine);
                     sb.Append("G4 P0" + Environment.NewLine);
-                    sb.Append("M3 S" + power + Environment.NewLine);
+                    sb.Append("M3 S" + xpower + Environment.NewLine);
                     sb.Append("G4 P0" + Environment.NewLine);
                     sb.Append("G1 X" + extendMapLPos[i].X + " Y" + extendMapLPos[i].Y + Environment.NewLine);
                     sb.Append("M5 S0" + Environment.NewLine);
@@ -747,7 +749,7 @@ namespace LaserGRBL
                 {
                     sb.Append("G1 X" + extendMapTPos[i].X + " Y" + extendMapTPos[i].Y + Environment.NewLine);
                     sb.Append("G4 P0" + Environment.NewLine);
-                    sb.Append("M3 S" + power + Environment.NewLine);
+                    sb.Append("M3 S" + ypower + Environment.NewLine);
                     sb.Append("G4 P0" + Environment.NewLine);
                     sb.Append("G1 X" + extendMapBPos[i].X + " Y" + extendMapBPos[i].Y + Environment.NewLine);
                     sb.Append("M5 S0" + Environment.NewLine);
@@ -756,7 +758,7 @@ namespace LaserGRBL
                 {
                     sb.Append("G1 X" + extendMapBPos[i].X + " Y" + extendMapBPos[i].Y + Environment.NewLine);
                     sb.Append("G4 P0" + Environment.NewLine);
-                    sb.Append("M3 S" + power + Environment.NewLine);
+                    sb.Append("M3 S" + ypower + Environment.NewLine);
                     sb.Append("G4 P0" + Environment.NewLine);
                     sb.Append("G1 X" + extendMapTPos[i].X + " Y" + extendMapTPos[i].Y + Environment.NewLine);
                     sb.Append("M5 S0" + Environment.NewLine);
