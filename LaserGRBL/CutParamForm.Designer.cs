@@ -180,7 +180,7 @@
             "1700",
             "1600",
             "1500"});
-            this.cbSpeed.Location = new System.Drawing.Point(195, 10);
+            this.cbSpeed.Location = new System.Drawing.Point(195, 11);
             this.cbSpeed.Name = "cbSpeed";
             this.cbSpeed.Size = new System.Drawing.Size(146, 25);
             this.cbSpeed.TabIndex = 14;
@@ -191,6 +191,27 @@
             this.cbXPower.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cbXPower.FormattingEnabled = true;
             this.cbXPower.Items.AddRange(new object[] {
+            "10000",
+            "9900",
+            "9800",
+            "9700",
+            "9600",
+            "9500",
+            "9400",
+            "9300",
+            "9200",
+            "9100",
+            "9000",
+            "8900",
+            "8800",
+            "8700",
+            "8600",
+            "8500",
+            "8400",
+            "8300",
+            "8200",
+            "8100",
+            "8000",
             "7900",
             "7800",
             "7700",
@@ -232,7 +253,7 @@
             "4100",
             "4000",
             "3900"});
-            this.cbXPower.Location = new System.Drawing.Point(195, 55);
+            this.cbXPower.Location = new System.Drawing.Point(195, 56);
             this.cbXPower.Name = "cbXPower";
             this.cbXPower.Size = new System.Drawing.Size(146, 25);
             this.cbXPower.TabIndex = 15;
@@ -243,6 +264,27 @@
             this.cbYPower.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cbYPower.FormattingEnabled = true;
             this.cbYPower.Items.AddRange(new object[] {
+            "10000",
+            "9900",
+            "9800",
+            "9700",
+            "9600",
+            "9500",
+            "9400",
+            "9300",
+            "9200",
+            "9100",
+            "9000",
+            "8900",
+            "8800",
+            "8700",
+            "8600",
+            "8500",
+            "8400",
+            "8300",
+            "8200",
+            "8100",
+            "8000",
             "7900",
             "7800",
             "7700",
@@ -284,7 +326,7 @@
             "4100",
             "4000",
             "3900"});
-            this.cbYPower.Location = new System.Drawing.Point(195, 101);
+            this.cbYPower.Location = new System.Drawing.Point(195, 100);
             this.cbYPower.Name = "cbYPower";
             this.cbYPower.Size = new System.Drawing.Size(146, 25);
             this.cbYPower.TabIndex = 22;
@@ -324,7 +366,7 @@
             "4",
             "3",
             "2"});
-            this.cbRow.Location = new System.Drawing.Point(195, 145);
+            this.cbRow.Location = new System.Drawing.Point(195, 146);
             this.cbRow.Name = "cbRow";
             this.cbRow.Size = new System.Drawing.Size(146, 25);
             this.cbRow.TabIndex = 16;
@@ -354,7 +396,7 @@
             "4",
             "3",
             "2"});
-            this.cbColumn.Location = new System.Drawing.Point(195, 190);
+            this.cbColumn.Location = new System.Drawing.Point(195, 191);
             this.cbColumn.Name = "cbColumn";
             this.cbColumn.Size = new System.Drawing.Size(146, 25);
             this.cbColumn.TabIndex = 17;
@@ -386,7 +428,7 @@
             "9.1",
             "9.05",
             "9"});
-            this.cbSize.Location = new System.Drawing.Point(195, 235);
+            this.cbSize.Location = new System.Drawing.Point(195, 236);
             this.cbSize.Name = "cbSize";
             this.cbSize.Size = new System.Drawing.Size(146, 25);
             this.cbSize.TabIndex = 18;
@@ -418,7 +460,7 @@
             "0.85",
             "0.8",
             "0.75"});
-            this.cbPtp.Location = new System.Drawing.Point(195, 280);
+            this.cbPtp.Location = new System.Drawing.Point(195, 281);
             this.cbPtp.Name = "cbPtp";
             this.cbPtp.Size = new System.Drawing.Size(146, 25);
             this.cbPtp.TabIndex = 19;
@@ -430,27 +472,17 @@
             this.cbExtend.FormattingEnabled = true;
             this.cbExtend.Items.AddRange(new object[] {
             "10",
-            "9.5",
             "9",
-            "8.5",
             "8",
-            "7.5",
             "7",
-            "6.5",
             "6",
-            "5.5",
             "5",
-            "4.5",
             "4",
-            "3.5",
             "3",
-            "2.5",
             "2",
-            "1.5",
             "1",
-            "0.5",
             "0"});
-            this.cbExtend.Location = new System.Drawing.Point(195, 325);
+            this.cbExtend.Location = new System.Drawing.Point(195, 326);
             this.cbExtend.Name = "cbExtend";
             this.cbExtend.Size = new System.Drawing.Size(146, 25);
             this.cbExtend.TabIndex = 20;
